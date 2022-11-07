@@ -1,4 +1,4 @@
-# > 更新时间  2022.11.05
+# > 更新时间  2022.11.07
 
 
 # > 光大银行阳光惠生活
@@ -117,6 +117,8 @@ host-keyword, p3-pack.byteimg.com, reject
 host-keyword, p6-pack.byteimg.com, reject
 # > 懂球帝
 host-keyword, apimg.qunliao.info, reject
+# > 深圳通微信小程序
+HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 # > 搜狗
 host, indivi-cdn.shouji.sogou.com, reject
 HOST-SUFFIX,epro.sogou.com, reject
