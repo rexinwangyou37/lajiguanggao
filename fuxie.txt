@@ -189,6 +189,7 @@ peisongapi.meituan.com,
 # > 四季線上影視
 ^https?+:\/\/service\.4gtv\.tv\/4gtv\/Data\/(?>GetAD|ADLog) url reject-200
 # >微信公众号文章下方广告
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\? url reject-dict
 ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
 ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject-img
 ^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
