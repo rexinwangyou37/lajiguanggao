@@ -1149,6 +1149,7 @@ ctier=[A-Z] url 302 ctier=A
 ^https?:\/\/api\.jxedt\.com\/jump\/EMiCcDNp url reject-img
 ^https?:\/\/richmanmain\.jxedt\.com\/advertisement\/fallback url reject-img
 # > 驾考宝典
+^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject
 ^https?:\/\/789\.kakamobi\.cn\/.+adver url reject-img
 ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert url reject-img
 # > 来疯
@@ -1396,7 +1397,5 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 电视家
 ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject
 ^https?:\/\/cdn\.dianshihome\.com\/static\/ad\/ url reject
-# > 驾考宝典
-^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject
 # > 其他广告
 
