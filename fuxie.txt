@@ -36,6 +36,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 邮储信用卡
 ^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/[0-9]+\.(jpg|png) url reject-200
 # > 买单吧
+^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/F7\/trScKGNov2qALvBLAAJSkXvbGqw589\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/CB\/trScJ2NfJuyAWer3AAKoHxFS67Q788\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/4A\/trScJ2NBLeOAbspxAARf7S2eu2w554\.jpg url reject-200
 ^https?:\/\/creditcard\.bankcomm\.com\/tfimg\/public00\/M00\/3A\/A9\/trScJ2NXhvaAfbl5AAMEtLprhp8025\.jpg url reject-200
