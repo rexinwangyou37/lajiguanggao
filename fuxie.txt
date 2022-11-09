@@ -89,6 +89,8 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[A-Z0-9]{2}\/[A-Z0-9]{2}\/[a-zA-Z0-9]{24}_[a-zA-Z0-9]{5}\.jpg url reject-200
 ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[A-Z0-9]{2}\/[A-Z0-9]{2}\/[a-zA-Z0-9]{13}-[a-zA-Z0-9]{11}_[a-zA-Z0-9]{4}\.jpg url reject-200
 #https://image.spdbccc.com.cn/group2/M00/8B/67/rBsZJmJhUzuAYookAAPZXatr3Jc894.jpg url 302 https://gitee.com/a28413761/tupian/raw/master/ssyy1.jpg
+# > 浦大喜奔（一劳永逸，误杀很多）
+# > ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/.+\/.+\/.+.jpg url reject-200
 # >  url 302 将前面的链接替换（重定向）为后面的链接
 # > 浦发银行
 ^https?:\/\/cdnmlmda\.res\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{20}_[0-4]{3}x[0-8]{3}.png url reject-200
