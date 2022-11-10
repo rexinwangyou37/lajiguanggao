@@ -918,6 +918,8 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? url reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? url reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? url reject-img
+# 小米商城
+^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url response-body "data":"skip_splash":false, response-body "data":"skip_splash":true,
 # > 起点读书
 ^https?:\/\/qidian\.qpic\.cn\/qidian_common url reject-img
 ^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-img
