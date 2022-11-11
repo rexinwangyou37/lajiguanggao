@@ -4,7 +4,7 @@
  * 
  */
 
-const url = `https://promote-pic.helipay.com/AGENT_PICS/images/advertisement/20220815183302.png`;
+const url = ``;
 const method = `GET`;
 const headers = {
 'User-Agent' : `%E5%85%83%E5%AE%87%E5%AE%A2/10251734 CFNetwork/1331.0.7 Darwin/21.4.0`,
