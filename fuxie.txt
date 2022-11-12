@@ -670,7 +670,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/ptf\.flyertrip\.com\/common\/cf\/.*.jpg url reject-200
 ^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=advis url reject
 ^https?:\/\/47\.100\.65\.202\/api\/mobile\/index\.php\?version=\d&mobile=yes&module=basicdata&type=forumlist url response-body adv response-body ddgksf2013
-^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Crack/fly.js
+^https?:\/\/47\.100\.65\.202\/source\/plugin\/mobile\/mobile\.php\?module=threadpost&.+?&page=1 url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/fly.js
 # > 京东
 ^https?:\/\/m15\.360buyimg\.com\/mobilecms\/jfs\/t1\/202220\/24\/21575\/134711\/625b821bE5d642d73\/77636692989bd2be\.jpg url reject
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs\/t1\/96405\/17\/28473\/168578\/625cd144E7997a990\/8233ce8a10c4e463\.jpg url reject
@@ -789,13 +789,13 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 屏蔽更新
 ^https?:\/\/api\.gotokeep\.com\/anno\/v\d\/upgrade\/check url reject
 # > 我的页面去推广
-^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
 # > 底部栏净化
-^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basic url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
 # > 发现页只保留顶部
-https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
 # > 课程预览页广告
-https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/keepStyle.js
+https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/keepStyle.js
 # >> 新浪微博
 ^https?:\/\/adimg\.uve\.weibo\.com\/public\/files\/image url reject
 ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
@@ -1336,7 +1336,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 米游社
 ^https?:\/\/upload-bbs\.mihoyo\.com\/upload\/202[2-9]{1}\/[0-9]{2}\/[0-9]{2}\/[a-z0-9]{32}_[a-z0-9]{19}\.(jpg|png)$ url reject-200
 # > 酷安
-^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/coolapk.js
+^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Script/coolapk.js
 ^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk url reject
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 # > 大智慧
@@ -1362,10 +1362,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 # > 转转（中间一行小图标被误杀了）
 ^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject
 ^https?:\/\/pic1\.zhuanstatic\.com\/zhuanzh\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\.png\?t=5&qa=90 url reject-200
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends url script-response-body https://gitlab.com/ddgksf2013/Cuttlefish/-/raw/master/Script/weibo_json.js
 # > 大众点评
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
 # > 麦当劳
