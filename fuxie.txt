@@ -148,7 +148,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v2 url reject-200
 # > 国泰君安君弘
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController url reject-200
-^https?:\/\/dl1\.app\.gtja\.com\/dzswem\/kvController url reject-200
+^https?:\/\/dl[0-9]{1}\.app\.gtja\.com\/dzswem\/kvController url reject-200
 # > 51信用卡管家
 ^https?:\/\/pic\.u51\.com\/sfs-gateway\/api\/v1\/download\/fdee084b34be406bb1dca0b3f95e00ca91eb url reject
 # > 苏宁
