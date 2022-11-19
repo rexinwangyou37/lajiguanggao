@@ -143,8 +143,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 天天基金
 ^https?:\/\/j5\.dfcfw\.com\/WG\/conf\/202[0-9]{5}/.*.(jpg|png) url reject-200
 # > 同花顺
-^https?:\/\/adm\.10jqka\.com\.cn\/img\/ad\/.*?(1\d{2}|\d{4})\.jpg url reject-img
-^https?:\/\/adm\.10jqka\.com\.cn\/interface\/getads\.php url reject-img
+^https?:\/\/adm\.10jqka\.com\.cn\/interface\/ad\/recommend url reject-200
 # > 东方财富
 ^https?:\/\/emdcadvertise\.eastmoney\.com\/infoService\/v2 url reject-200
 # > 国泰君安
