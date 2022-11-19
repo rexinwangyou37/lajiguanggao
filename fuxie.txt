@@ -184,7 +184,6 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/pcvideoyd\.titan\.mgtv\.com\/pb\/ url reject-img
 # > AcFun弹幕视频网
 ^https?+:\/\/aes\.acfun\.cn\/s\?adzones url reject-200
-^https?:\/\/aes\.acfun\.cn\/s\?adzones url reject
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ url reject
 # > 低端影视
 ^https?:\/\/ddrk\.me\/image\/logo_footer\.png url reject-img
@@ -231,7 +230,6 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\//m\.ads\.8le8le\.com\/adShow url reject
 # > 网易邮箱
 ^https?+:\/\/appconf\.mail\.163\.com\/mmad\/ url reject-200
-https:\/\/appconf\.mail\.163\.com\/mmad\/get\.do url reject
 http:\/\/analytics\.163\.com\/ntes url reject
 # > 网易
 ^https?:\/\/p[^4](c)?\.music\.126\.net\/\w+==\/10995\d{13}\.jpg$ url reject-img
