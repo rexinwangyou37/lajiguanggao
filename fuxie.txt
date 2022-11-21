@@ -357,8 +357,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/cloud\.189\.cn\/include\/splash\/ url reject
 ^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation url reject-img
 # > 天翼云盘
-^https?:\/\/api\.cloud\.189\.cn\/guns\/img\/recommendedPosition\/.*.jpg url reject-200
-^https?:\/\/cloud\.189\.cn\/include\/splash\/20170512mother\/.*.jpg url reject-200
+^https?:\/\/api\.cloud\.189\.cn\/guns\/getOpenscreenBanners reject-200
 # > 携程（8.47.0以上版本会有部分图片加载不出来）
 ^https:\/\/m\.ctrip\.com\/restapi\/.+\/json\/tripAds url reject
 ^https?:\/\/dimg04\.c-ctrip\.com\/images\/[a-zA-Z0-9]{21}\.(jpg|png)$ url reject-200
