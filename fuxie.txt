@@ -1283,9 +1283,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg) url reject-200
 # > Vista看天下
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad url reject-200
-# > 转转（中间一行小图标被误杀了）
-^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo$ url reject
-^https?:\/\/pic1\.zhuanstatic\.com\/zhuanzh\/[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}\.png\?t=5&qa=90 url reject-200
+# > 转转
+^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject-200
 # > 大众点评
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
 # > 麦当劳
