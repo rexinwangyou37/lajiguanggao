@@ -1176,6 +1176,12 @@ HOST-SUFFIX, admobile.top, REJECT
 host-keyword,bds.snssdk.com, reject
 host-keyword,p6-ad-sign.byteimg.com, reject
 host-keyword,p3.pstatp.com, reject
+# > 虎牙直播
+host-keyword,pp-cdnfile2pcdn.msstatic.com, reject
+host-keyword,livewebbs2pcdn.msstatic.com, reject
+host-keyword,huyafile.msstatic.com, reject
+host-keyword,livewebbs2.msstatic.com, reject
+host-keyword,business.msstatic.com, reject
 # > 皮皮虾（推荐视频不能预览）
 host-keyword,log-api.pangolin-sdk-toutiao-b.com, reject
 host-keyword,log-api.pangolin-sdk-toutiao.com, reject
