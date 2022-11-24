@@ -336,8 +336,6 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/staticlive\.douyucdn\.cn\/upload\/signs\/ url reject-img
 # > 虾米音乐
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ url reject
-# >> 全民K歌
-^https?+:\/\/y\.gtimg\.cn\/music\/common\/\/upload\/kg_ad\/.+?\d{3,4}+x\d{4} url reject-200
 # > 追书神器
 ^https?+:\/\/(?>api|b)\.zhuishushenqi\.com\/advert url reject-200
 ^https?+:\/\/api\.zhuishushenqi\.com\/splashes\/ios url reject-200
