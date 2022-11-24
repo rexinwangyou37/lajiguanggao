@@ -190,6 +190,7 @@ HOST-SUFFIX, meituangov.cn, reject
 HOST-SUFFIX, report.meituan.com, reject
 HOST-SUFFIX, wmlog.meituan.com, reject
 # > UC浏览器
+host-keyword, u3.ucweb.com, reject
 host-keyword, m.atm.youku.com, reject
 host-keyword, adp.atm.youku.com, reject
 host-keyword, clickc.admaster.com, reject
