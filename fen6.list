@@ -42,6 +42,8 @@ host-keyword, paradisestatic.vivo.com.cn, reject
 # > 一刻相册
 host-keyword, sf1-be-tos.pglstatp-toutiao.com, reject
 host-keyword, sf3-fe-tos.pglstatp-toutiao.com, reject
+# > 全民K歌
+HOST-SUFFIX,gdc.kg.qq.com, reject
 # > 酷狗音乐
 host-keyword, searchrecommend.kugou.com, reject
 host-keyword, nbcollectretry.kugou.com, reject
