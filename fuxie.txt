@@ -91,7 +91,9 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/imcs\.citicbank\.com\/cloud\/[a-zA-Z0-9]{32}\.(jpg|jpeg)\?width=[0-9]{4}&height=[0-9]{4} url reject-200
 # > 动卡空间
 ^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/2022[0-9]{2}[0-9]{18}\.jpg url reject-200
-^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/20221[0-9]{1}\d{18}\.png url reject-200
+^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/202210101342570458370816\.png url reject-200
+^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/202211141532060390988306\.png url reject-200
+^https?:\/\/m\.citiccardcdn\.citicbank\.com\/citiccard\/mbk\/dkkjv4\/appspace-img\/icon\/202211141014260877279812\.png url reject-200
 # > 202205\d{18}\.(png|jpg) url reject-200  202205后面18位数字的jpg和png格式的图片都拦截。
 # > 发现精彩
 ^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/202\d{5}\/.*.(png|jpg|JPG) url reject-200
