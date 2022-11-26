@@ -727,7 +727,7 @@ https://api.gotokeep.com/homepage/v7/tab/find url script-response-body https://r
 https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/keepStyle.js
 # >> 新浪微博
 # > 微博开屏广告
-^https?:\/\/(sdk|wb)app\.uve\.weibo\.com\/(interface\/sdk\/sdkad.php|wbapplua\/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo/weiboLaunch.js
+^https?:\/\/(sdk|wb)app\.uve\.weibo\.com\/(interface\/sdk\/sdkad.php|wbapplua\/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/splashAds.js
 # > 微博去广告
 ^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 # > 微博自定义tab皮肤
@@ -796,7 +796,7 @@ https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryInfoFlow url scri
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? url reject-img
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? url reject-img
 # 小米商城
-^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/mimall.js
+^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/splashAds.js
 # > 起点读书
 ^https?:\/\/qidian\.qpic\.cn\/qidian_common url reject-img
 ^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-img
