@@ -81,7 +81,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.+1920.+1920\.png url reject-200
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.*.(jpg|gif|JPG|jpeg) url reject-200
 # > 建行生活
-^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A009 url reject-200
+^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
 # > 华彩生活
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/21\/amRGFWJzJsGAdy7RAAFxgeiCVcw561\.jpg url reject
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/20\/amRGFWJWO2iASPzaAAKFE-z58V0231\.jpg url reject
