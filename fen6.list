@@ -110,8 +110,6 @@ HOST-SUFFIX,wa.kuwo.cn, reject
 HOST-SUFFIX,webstat.kuwo.cn, reject
 HOST-SUFFIX,mobilead.kuwo.cn, reject
 HOST-SUFFIX,rich.kuwo.cn, reject
-# > 向日葵
-host-keyword, upload-cdn.orayimg.com, reject
 # > 小利生活
 host-keyword, mpos-pic.helipay.com, reject
 # > 懂车帝
