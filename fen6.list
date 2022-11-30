@@ -603,6 +603,8 @@ HOST,ad.21cn.com, reject
 HOST,ad.k.21cn.com, reject
 HOST,admarket.21cn.com, reject
 HOST,adshows.21cn.com, reject
+# > 中国联通
+HOST-SUFFIX,m1.ad.10010.com, reject
 # > 车来乐
 HOST,atrace.chelaile.net.cn, reject
 HOST,logs.chelaile.net.cn, reject
