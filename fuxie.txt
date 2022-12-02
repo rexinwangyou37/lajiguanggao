@@ -319,7 +319,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 虾米音乐
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit\/ url reject
 # > 追书神器
-^https?:\/\/adx-cn\.anythinktech\.com\/bid
+^https?:\/\/adx-cn\.anythinktech\.com\/bid url reject-200
 # > 作业帮
 ^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
 ^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
