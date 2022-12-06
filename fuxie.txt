@@ -388,12 +388,6 @@ https://homefront.qunar.com/front/splash/ad url reject
 ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd url reject-img
 # > 小利生活
 ^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image url reject
-# > 金山词霸
-^https?:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+(c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) url reject
-^https?:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject
-^https?+:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson url reject-200
-^https?+:\/\/\w+?\.kingsoft-office-service\.com\/ad url reject-200
-^https?:\/\/.+?\.kingsoft-office-service\.com url reject
 # > 快看
 ^https?+:\/\/api\.kkmh\.com\/.+?ad(?:vertisement)?+\/ url reject-200
 ^https?:\/\/api\.kkmh\.com\/v\d+\/(ad|advertisement)\/ url reject
