@@ -163,7 +163,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?+:\/\/aes\.acfun\.cn\/s\?adzones url reject-200
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ url reject
 # > 555影视
-^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/(getAdvertlnfo|getGOOGAdvert) url reject-200
+^https?:\/\/vip7\.fzwdyy\.cn:8083\/api\/(getAdvertInfo|getGOOGAdvert) url reject-200
 # > 低端影视
 ^https?:\/\/ddrk\.me\/image\/logo_footer\.png url reject-img
 ^https?:\/\/img\.ddrk\.me\/ad190824 url reject-img
