@@ -1139,6 +1139,7 @@ host-keyword,s3-fe-scm.pglstatp-toutiao.com, reject
 host-keyword,sf6-be-pack.pglstatp-toutiao.com, reject
 host-keyword,p9-be-pack-sign.pglstatp-toutiao.com, reject
 # > 哔哩哔哩
+HOST,grpc.biliapi.net,REJECT
 HOST-SUFFIX,cm.bilibili.com, reject
 host-keyword, api.sobot.com, reject
 HOST-SUFFIX,cm.ad.bilibili.com, reject
