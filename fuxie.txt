@@ -396,12 +396,6 @@ https://homefront.qunar.com/front/splash/ad url reject
 ^https?+:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject-200
 ^https?:\/\/4gimg\.map\.qq\.com\/mwaSplash\/ url reject
 # > 腾讯新闻
-^https?:\/\/r\.inews\.qq\.com\/(adsBlacklist|getFullScreenPic|getQQNewsRemoteConfig) url reject
-^https?:\/\/r\.inews\.qq\.com\/getBannerAds url reject-img
-^https?:\/\/r\.inews\.qq\.com\/getNewsRemoteConfig url reject-img
-^https?:\/\/r\.inews\.qq\.com\/getSplash\?apptype=ios&startarticleid=&__qnr= url reject-img
-^https?:\/\/r\.inews\.qq\.com\/searchHotCatList url reject-img
-^https?:\/\/r\.inews\.qq\.com\/upLoadLoc url reject-img
 ^https:\/\/(news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(get(QQNewsUnreadList|TagFeedList)|gw\/page\/event_detail|news_feed\/hot_module_list)) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/qq-news.js
 # > 腾讯体育
 ^https?:\/\/news\.ssp\.qq\.com\/app url reject
