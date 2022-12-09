@@ -13,7 +13,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > ads.95516.com和tysdk.95516.com这两个域名都拦截
 # > 农业银行（广告就这这个连接里面,但是拦截后大部分功能打不开,记录留待以后再说）
 ^https?:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm url reject-200
-# > 兴业银行（首页会有一小部分图片误杀）
+# > 兴业银行
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
 # > [a-zA-Z0-9]{32} 匹配32位的数字和大小写字母混合  [4-9]{1} 匹配4到9之间的其中一个数字
