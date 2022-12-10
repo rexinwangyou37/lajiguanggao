@@ -76,7 +76,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/21\/amRGFWJzJsGAdy7RAAFxgeiCVcw561\.jpg url reject
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/app\/apps\/group1\/M00\/00\/20\/amRGFWJWO2iASPzaAAKFE-z58V0231\.jpg url reject
 # > 中信银行
-^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework url reject-200
+^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA url reject-200
 # > 动卡空间（3秒倒计时还在）
 ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/appspace-getway\/getWay\/dkkj-system-web\/system\/v\d\/init-config url reject-200
 # > 发现精彩
