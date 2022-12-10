@@ -53,7 +53,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?+:\/\/www\.cmbc\.com\.cn\/m\/image\/loadingpage\/ url reject-200
 ^https:\/\/www\.cmbc\.com\.cn\/m\/image\/banner\/.*.png url reject-200
 # > .*.png url reject-200 所有png类型图片都拦截
-# > 浦大喜奔
+# > 浦大喜奔(倒计时还在)
 ^https?:\/\/image\.spdbccc\.com\.cn\/group\d\/M00\/[7-9]{1}[A-Z0-9]{1}\/[A-Z0-9]{2}\/rBsZ.+.\jpg url reject-200
 #https://image.spdbccc.com.cn/group2/M00/8B/67/rBsZJmJhUzuAYookAAPZXatr3Jc894.jpg url 302 https://gitee.com/a28413761/tupian/raw/master/ssyy1.jpg
 # > 浦发银行
