@@ -360,7 +360,7 @@ https://homefront.qunar.com/front/splash/ad url reject
 ^https?:\/\/source\.qunarzz\.com\/site\/images\/wns\/.*.jpg url reject
 ^https?:\/\/client\.qunar\.com\/pitcher-proxy\?qrt=p_splashAd url reject-img
 # > 小利生活
-^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image\/20211029 reject-200
+^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image\/20211029 url reject-200
 # > 快看
 ^https?:\/\/api\.kkmh\.com\/v\d\/ad\/show url reject-200
 # > 盛趣游戏
