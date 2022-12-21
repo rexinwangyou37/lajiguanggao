@@ -58,7 +58,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 #https://image.spdbccc.com.cn/group2/M00/8B/67/rBsZJmJhUzuAYookAAPZXatr3Jc894.jpg url 302 https://gitee.com/a28413761/tupian/raw/master/ssyy1.jpg
 # > 浦发银行
 ^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.{63,135}\.(jpg|JPG|jpeg) url reject-200
-^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/.+1920.+1920.+ url reject-200
+^https?:\/\/mlmdacdn\.spdb\.com\.cn\/oss\/product-mm\/app\/default\/(.+1920.+1920.+|.+9d99) url reject-200
 # > 建行生活
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
 # > 华彩生活
