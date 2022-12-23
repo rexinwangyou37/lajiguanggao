@@ -295,9 +295,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 追书神器
 ^https?:\/\/adx-cn\.anythinktech\.com\/bid url reject-200
 # > 作业帮
-^https?:\/\/img\.zuoyebang\.cc\/zyb-image[\s\S]*?\.jpg url reject-img
-^https?:\/\/syh\.zybang\.com\/com\/adx\/ url reject
-^https?:\/\/www\.zybang\.com\/adx\/ url reject
+^https?:\/\/syh\.zybang\.com\/com\/adx\/impress url reject-200
 # > 超星学习通
 ^https?:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? url reject
 # > 当当
