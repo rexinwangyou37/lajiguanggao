@@ -90,7 +90,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 兴业证券优理宝（3秒倒计时还在）
 ^https?:\/\/estock\.xyzq\.cn\/rest\/app\/splash\/imgurl url reject-200
 # > 涨乐财富通
-^https:\/\/geetest\.htsc\.com:8888/pre_get_token url reject-200
+^https:\/\/geetest\.htsc\.com:8888\/pre_get_token url reject-200
 # > 天天基金
 ^https?:\/\/j5\.dfcfw\.com\/WG\/conf\/202[0-9]{5}/.*.(jpg|png) url reject-200
 # > 同花顺
