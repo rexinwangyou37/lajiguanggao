@@ -793,16 +793,21 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 # > 雅虎
 ^https?:\/\/m\.yap\.yahoo\.com\/v\d{2}\/getAds\.do url reject
 # > 油管
-ctier=[A-Z] url 302 ctier=A
-^https://[\s\S]*\.googlevideo\.com/.*&(oad|ctier) url reject-200
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\? url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide) url script-response-body https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.js
+# > 去除首页瀑布流广告
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除底部上传按钮
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/guide\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除播放页广告
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/next\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除Shorts内视频广告
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/reel\/reel_watch_sequence\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除搜索页面广告
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/search\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除播放过程插播广告
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\?key url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube.js
+# > 去除播放器贴片广告
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback\?.+&oad url reject-img
+
 # > 58
 ^https?+:\/\/.+?\.58cdn\.com\.cn\/brandads\/ url reject-200
 ^https?+:\/\/app\.58\.com\/api\/home\/invite\/popupAdv url reject-200
