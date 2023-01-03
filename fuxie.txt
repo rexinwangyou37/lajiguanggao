@@ -692,11 +692,6 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/agent-count\.pconline\.com\.cn\/counter\/adAnalyse\/ url reject
 ^https?:\/\/mrobot\.(pcauto|pconline)\.com\.cn\/v\d\/ad\dp url reject
 ^https?:\/\/mrobot\.pcauto\.com\.cn\/xsp\/s\/auto\/info\/(ad|preload) url reject
-# > 天气通
-^https?+:\/\/tqt\.weibo\.cn\/.+?advert\.index url reject-200
-^https?:\/\/tqt\.weibo\.cn\/[\w=?&%.-]+advert\.index url reject
-^https?+:\/\/tqt\.weibo\.cn\/api\/advert\/ url reject-200
-^https?:\/\/tqt\.weibo\.cn\/overall\/redirect\.php\?r=(tqt_sdkad|tqtad) url reject
 # > 美团
 ^https?+:\/\/img\.meituan\.net\/(?>adunion|display|midas)\/.+?\.(gif|jpg|jpg\.webp)$ url reject-200
 ^https?:\/\/s3plus\.meituan\.net\/.+?\/linglong\/ url reject
