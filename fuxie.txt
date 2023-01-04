@@ -115,6 +115,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery url reject-200
 # > 高德地图
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/ url reject-200
+^https:\/\/m5\.amap\.com\/\w+\/shield\/dsp\/app\/startup\/init url reject-200
 ^https?:\/\/sns\.amap\.com\/ws\/msgbox\/pull url reject-dict
 # > 优酷
 ^https?:\/\/vali\.cp31\.ott\.cibntv\.net\/youku url reject
