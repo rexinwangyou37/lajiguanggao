@@ -1176,8 +1176,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 #> 广汽本田
 ^https?:\/\/gha\.ghac\.cn\:8081\/base\/app\/api\/ad\/query\?adType=1 url reject-200
 #> 京东云无线宝
-^https:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash url reject-200
+^https?:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash url reject-200
 #> 航旅纵横
-^https:\/\/discardrp\.umetrip\.com\/gateway\/api\/umetrip\/native url reject-200
+^https?:\/\/discardrp\.umetrip\.com\/gateway\/api\/umetrip\/native url reject-200
 # > 其他广告
 
