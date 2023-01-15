@@ -1191,7 +1191,6 @@ host-keyword,api-access.pangolin-sdk-toutiao.com, reject
 # > 其他广告
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
-host-keyword,log.snssdk.com, reject
 host-keyword,mobads.baidu.com, reject
 host-keyword,s3a.pstatp.com, reject
 host-keyword,sdfp.snssdk.com, reject
