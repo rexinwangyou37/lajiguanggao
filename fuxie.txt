@@ -19,7 +19,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
 # > [a-zA-Z0-9]{32} 匹配32位的数字和大小写字母混合  [4-9]{1} 匹配4到9之间的其中一个数字
 # > 兴业银行好兴动（会弹窗解压失败,需手动关闭）
-^https?:\/\/file\.cibfintech\.com\/file\/M0[1-9]{1}\/*\/*\/.*.zip url reject-img
+^https?:\/\/file\.cibfintech\.com\/file\/M0[0-9]{1}\/*\/*\/.*.zip url reject-img
 # > reject-img 解压失败,进度100%   reject-200解压失败,进度0%
 # > 光大银行(倒计时还在)
 ^https?:\/\/static\.cebbank\.com\/fileDir\/subject\/resource\/sjyhzqtp\/MOBILEBANKAD\/OPENAD\/.+kp\.png url reject-200
