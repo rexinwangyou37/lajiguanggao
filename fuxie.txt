@@ -106,8 +106,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController url reject-200
 ^https?:\/\/dl[0-9]{1}\.app\.gtja\.com\/dzswem\/kvController url reject-200
 # > 51信用卡管家
-^https?:\/\/api\.u51\.com\/rs-resys\/api\/v\d\/recommend url reject-200
-^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/creditpage-config url reject-200
+^https?:\/\/api\.u51\.com\/(generic-config-gateway|rs-resys)\/api\/v\d\/(creditpage-config|recommend) url reject-200
 ^https?:\/\/pic\.u51\.com\/sfs-gateway\/api\/v1\/download\/fdee084b34be406bb1dca0b3f95e00ca91eb url reject
 # > 苏宁
 ^https?:\/\/mpcs\.suning\.com\/mpcs\/dm\/getDmInfo url reject
