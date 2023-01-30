@@ -964,16 +964,7 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/cdn\.kuaidi100\.com\/images\/open\/appads url reject-img
 ^https?:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do url reject
 # > spotify音乐
-^https?:\/\/spclient\.wg\.spotify\.com\/.+ad_slot url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+banners url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+crashlytics url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+doubleclick url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+enabled-tracks url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+event url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+promoted url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/.+sponsored url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/ad-logic url reject-img
-^https?:\/\/spclient\.wg\.spotify\.com\/ads url reject-img
+^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 # > 国美电器
 ^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/\w+\.jsp url reject
 ^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/sale\w+\.jsp url reject
