@@ -105,7 +105,7 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 # > 国泰君安君弘
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController url reject-200
 ^https?:\/\/dl[0-9]{1}\.app\.gtja\.com\/dzswem\/kvController url reject-200
-# > 51信用卡管家
+# > 51信用卡管家 V12.9.2
 ^https?:\/\/api\.u51\.com\/(generic-config-gateway|rs-resys)\/api\/v\d\/(creditpage-config|recommend) url reject-200
 ^https?:\/\/api\.u51\.com\/liabilitygateway\/api\/v\d\/homepage\/liabilityline url response-body "operationResourceDTO" : \[.*\], response-body "operationResourceDTO" : [],
 ^https?:\/\/api\.u51\.com\/generic-config-gateway\/api\/v\d\/guanjia\/me-tab2\/config url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/51xinyongka.js
