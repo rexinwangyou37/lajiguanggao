@@ -89,6 +89,8 @@ hostname = ad.ysepay.com, m.jd.com, www.zhihu.com, api.zhihu.com, appcloud2.zhih
 ^https?:\/\/ad\.ysepay\.com\/yst-ad\/ST101001\/[0-9]{11}\.jpg url reject
 # > 南方航空弹窗
 ^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement url reject-200
+# > 南方航空更新弹窗
+^https?:\/\/3g\.csair\.com\/CSMBP\/data\/homePage\/getLaunchInfoNew\.do url reject-200
 # > 向日葵
 ^https?:\/\/client-api\.oray\.com\/materials\/SLCC_IOS_STARTUP\?lang=zh-Hans-CN url reject-200
 # > 兴业证券优理宝（3秒倒计时还在）
