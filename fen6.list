@@ -1187,6 +1187,10 @@ host-keyword,api-access.pangolin-sdk-toutiao.com, reject
 # > host-keyword,i.snssdk.com, reject, reject
 # > 影响端传媒正常运行，默认关闭
 # > HOST-SUFFIX, cloudfront.net, reject
+# > Outlook
+HOST,acdn.adnxs.com,REJECT
+HOST,mediation.adnxs.com,REJECT
+HOST,sin3-ib.adnxs.com,REJECT
 # > 其他广告
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
