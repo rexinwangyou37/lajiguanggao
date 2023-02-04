@@ -383,7 +383,6 @@ HOST-SUFFIX,duapps.com, reject
 HOST-SUFFIX,cpro.baidu.com, reject
 HOST-SUFFIX,pos.baidu.com, reject
 HOST,afd.baidu.com, reject
-HOST,als.baidu.com, reject
 HOST,duclick.baidu.com, reject
 HOST,mobads.baidu.com, reject
 HOST,mobads-logs.baidu.com, reject
