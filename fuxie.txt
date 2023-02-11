@@ -1235,7 +1235,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad url reject-200
 # > 转转
 ^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject-200
-^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage url reject-200
+^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage&uid=45577438972181 url reject-200
 # > 大众点评
 ^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
 # > 麦当劳
