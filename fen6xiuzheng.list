@@ -9,6 +9,7 @@ host, time.apple.com, direct
 host-keyword, weather-edge.apple.com, direct
 host-keyword, weather-adge.apple.com, direct
 host-keyword, weather-data.apple.com, direct
+host-keyword, weather-map.apple.com, direct
 host-keyword, weather-analytics-events.apple.com, direct
 # > 苹果内购服务
 host-keyword, buy.itunes.apple.com, direct
