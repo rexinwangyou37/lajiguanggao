@@ -678,6 +678,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ url reject
 # > 唯品会
 ^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/advertisement\/get url reject-200
+^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/layout\/productList\/eventData\/v url reject-200
 # > 什么值得买去广告
 # > 什么值得买好价详情页
 ^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul url reject
