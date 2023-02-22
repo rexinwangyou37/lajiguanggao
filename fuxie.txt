@@ -469,7 +469,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do url rejec
 # > 永辉生活
 ^https?:\/\/api\.yonghuivip\.com\/web\/shensuan\/ad\/getAd url reject-200
 # > 12306
-^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/12306.js
+^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList url script-analyze-echo-response https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/12306.js
 # > 去哪儿
 ^https:\/\/qde\.qunar\.com\/preload url reject-200
 # > 飞猪旅行
