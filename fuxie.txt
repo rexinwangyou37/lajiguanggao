@@ -946,7 +946,7 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/ptmpcap\.caocaokeji\.cn\/advert-bss\/ url reject-img
 ^https?:\/\/cap\.caocaokeji\.cn\/advert-bss\/ url reject
 # > 天猫养车
-^https?:\/\/api\.ncarzone\.com\/superapi\/canary\/appHomeFacade\/getNewUserPlateActivity url reject-200
+^https?:\/\/api\.ncarzone\.com\/superapi\/canary\/(popupDialogFacade|appHomeFacade)\/(popupDialogList|getNewUserPlateActivity) url reject-200
 # > 公交云
 ^https?:\/\/m\.ibuscloud.com\/v2\/app\/getStartPage url reject
 # > 掌上公交-我的横幅广告
