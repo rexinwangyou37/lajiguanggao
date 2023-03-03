@@ -136,6 +136,9 @@ HOST-SUFFIX,brand.sogou.com, reject
 HOST-SUFFIX,bsiet.husky.sogou.com, reject
 # > 搜狗输入法
 host-keyword, business-cdn.shouji.sogou.com, reject
+# > 屏蔽京东和搜狗收集信息
+host-suffix, jdqd.jd.com, reject
+host-suffix, shouji.sougou.com, reject
 ## QQ音乐广告
 HOST,tmeadcomm.y.qq.com, reject
 HOST,ad.tencentmusic.com, reject
