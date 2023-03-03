@@ -695,7 +695,6 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/layout\/productList\/eventData\/v url reject-200
 ^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/coupon\/float_entrance\/get\?api_key url reject-200
 ^https?:\/\/b\.appsimg\.com\/upload\/momin\/202[3-9]{1}\/.+\/.+\/.+\/.+\.jpg!85\.webp url reject-200
-dm_remove_ads.js
 # > KeepStyle超级净化
 # > 屏蔽部分启动弹窗
 ^https?:\/\/api\.gotokeep\.com\/kprime\/v\d\/popups\/primeGuide url reject
