@@ -144,7 +144,6 @@ HOST,tmeadcomm.y.qq.com, reject
 HOST,ad.tencentmusic.com, reject
 HOST,adstats.tencentmusic.com, reject
 HOST,tmead.y.qq.com, reject
-HOST-SUFFIX,rqd.qq.com, reject
 HOST-SUFFIX,wup.imtt.qq.com, reject
 HOST-SUFFIX,gdt.qq.com, reject
 HOST-SUFFIX,android.rqd.qq.com, reject
