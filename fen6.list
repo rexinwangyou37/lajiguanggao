@@ -144,12 +144,14 @@ HOST,tmeadcomm.y.qq.com, reject
 HOST,ad.tencentmusic.com, reject
 HOST,adstats.tencentmusic.com, reject
 HOST,tmead.y.qq.com, reject
+HOST-SUFFIX,rqd.qq.com, reject
 HOST-SUFFIX,wup.imtt.qq.com, reject
 HOST-SUFFIX,gdt.qq.com, reject
 HOST-SUFFIX,android.rqd.qq.com, reject
 HOST-SUFFIX,e.qq.com, reject
 HOST-SUFFIX,beacon.qq.com, reject
 HOST-SUFFIX,v.gdt.qq.com, reject
+HOST-SUFFIX,ios.bugly.qq.com, reject
 # > 小米
 HOST,data.mistat.xiaomi.com, reject
 HOST,tracking.intl.miui.com, reject
