@@ -597,7 +597,6 @@ HOST,ad.360in.com, reject
 HOST,exp.360in.com, reject
 # (G)
 # > 谷歌
-HOST-SUFFIX,google-analytics.com, reject
 HOST,safebrowsing.googleapis.com, reject
 HOST-SUFFIX,doubleclick.net, reject
 HOST-SUFFIX,googleadservices.com, reject
