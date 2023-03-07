@@ -618,7 +618,6 @@ HOST-SUFFIX,badad.googleplex.com, reject
 HOST-SUFFIX,afs.googlesyndication.com, reject
 HOST-SUFFIX,afd.l.google.com, reject
 HOST-SUFFIX,www.googleadservices.com, reject
-HOST-SUFFIX,www.google-analytics.com, reject
 HOST,ads.youtube.com, reject
 # (H)
 # > 湖南卫视
