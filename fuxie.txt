@@ -830,6 +830,8 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
 # > 小米有品
 ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig url reject-200
+# > 米家
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab)\? url reject-dict
 # > 起点读书
 ^https?:\/\/qidian\.qpic\.cn\/qidian_common url reject-img
 ^https?:\/\/mage\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-img
