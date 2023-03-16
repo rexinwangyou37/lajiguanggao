@@ -164,7 +164,6 @@ host, errlog.umeng.com, reject
 host, lf9-cdn-tos.bytegecko.com, reject
 host, novel.pangolin-sdk-toutiao.com, reject
 # > 高德
-HOST-SUFFIX,amdc.m.taobao.com,reject
 HOST-SUFFIX,page.amap.com,reject
 HOST-SUFFIX,www.qchannel01.cn,reject
 # > 美团
