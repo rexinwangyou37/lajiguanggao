@@ -1307,6 +1307,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/z\.onewo\.com\/passer\/api\/ads\/v1\/8\/list url reject-200
 # > 苏e行
 ^https?:\/\/api\.bwton\.com\/bas\/ad url reject-200
+# > 超级课程表
+^http:\/\/182\.92\.244\.70\/d\/json url reject-dict
 
 # > 拦截APP更新提示弹窗
 # > 医考帮 #强制更新
