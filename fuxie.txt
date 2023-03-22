@@ -1314,7 +1314,7 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^http?:\/\/images\.pinduoduo\.com\/marketing\_api url reject-200
 ^https?:\/\/lofter\.lf127\.net\/ad\-material url reject-200
 # > 朴朴超市
-^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=[A-Z0-9%]+&store_id=[a-z0-9\-]+ url script-response-body https://raw.githubusercontent.com/LimeAroma/Quantumultx/main/Js/PupuSplashAds.js
+^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=2(%[A-Z0-9]+)+&store_id url script-response-body https://raw.githubusercontent.com/LimeAroma/Quantumultx/main/Js/PupuSplashAds.js
 # > 长城炼金术
 ^https:\/\/fintechappdr\.cgws\.com\/api\/business-operation\/app\/a\/flash\/window\/get\?type=2 url reject-dict
 
