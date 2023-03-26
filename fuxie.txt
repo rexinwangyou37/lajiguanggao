@@ -12,7 +12,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > ^https?+:\/\/(tysdk|ads)\.95516\.com url reject-dict
 # > ads.95516.com和tysdk.95516.com这两个域名都拦截
 # > 农业银行
-^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file/download\/(9ce31|1bf6e) url reject-200
+^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/(9ce31|1bf6e) url reject-200
 #^https?:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm url reject-200
 # > 兴业银行
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
