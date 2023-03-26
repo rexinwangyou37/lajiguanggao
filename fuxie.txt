@@ -1016,7 +1016,7 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 # > 最右
 ^https?:\/\/api\.izuiyou\.com\/ad\/ url reject
 # > 驾校一点通
-^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall(Bidding)?\/find url rejectg
+^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall(Bidding)?\/find url reject
 # > 驾考宝典
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject
 ^https?:\/\/789\.kakamobi\.cn\/.+adver url reject-img
