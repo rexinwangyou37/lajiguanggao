@@ -18,9 +18,6 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20221[1-2]{1} url reject-200
 ^https?:\/\/images\.cib\.com\.cn\/commons\/uploads\/commons\/[a-zA-Z0-9]{32}\.jpg\?ver=20230[1-9]{1} url reject-200
 # > [a-zA-Z0-9]{32} 匹配32位的数字和大小写字母混合  [4-9]{1} 匹配4到9之间的其中一个数字
-# > 建设银行
-^http:\/\/image1\.ccb\.com\/newsinfo\/eBranch\/check\/nf\/newfin\/activity\/xjr_\w+\.png$ url reject
-^http:\/\/imageadv\.ccb\.com\/adpic\/(nctm\/ad|sszserver\/upload\/activity)\/\d{8}\/\w+\.(gif|png|jpg)$ url reject
 # > 兴业生活
 ^https?:\/\/file\.cibfintech\.com\/file\/M0[0-9]{1}\/*\/*\/.*.zip url reject-img
 # > reject-img 解压失败,进度100%   reject-200解压失败,进度0%
@@ -67,7 +64,6 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https:\/\/(lban|wap)\.spdb\.com\.cn\/mspmk-web-(component|homeassist)\/(getAdvList|getAdvertisementList|prefetchAdvList|OpenScreenAdv) url reject-200
 # > 建行生活
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
-^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB03 url reject-200
 # > 华彩生活
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/mcube\/apps\/group\d\/M00\/00\/2[A-Z0-9]{1}\/amRG7WO.+\.jpg url reject-200
 # > 中信银行
