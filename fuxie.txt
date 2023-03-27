@@ -67,6 +67,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https:\/\/(lban|wap)\.spdb\.com\.cn\/mspmk-web-(component|homeassist)\/(getAdvList|getAdvertisementList|prefetchAdvList|OpenScreenAdv) url reject-200
 # > 建行生活
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
+^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB03 url reject-200
 # > 华彩生活
 ^https?:\/\/static\.creditcard\.hxb\.com\.cn\/mcube\/apps\/group\d\/M00\/00\/2[A-Z0-9]{1}\/amRG7WO.+\.jpg url reject-200
 # > 中信银行
