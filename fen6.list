@@ -1260,6 +1260,15 @@ HOST-SUFFIX, u3.ucweb.com, REJECT
 HOST-SUFFIX, safebrowsing.urlsec.qq.com, REJECT
 HOST-SUFFIX, safebrowsing.googleapis.com, REJECT
 HOST-SUFFIX, lookup.api.bsb.baidu.com, REJECT
+# > TubeMax 
+host-suffix, adjust.com, reject
+host-suffix, applvn.com, reject
+host-suffix, app-measurement.com, reject
+host-suffix, pangle.io, reject
+host-suffix, applovin.com, reject
+host-suffix, appier.net, reject
+host-suffix, adsmoloco.com, reject
+host-suffix, adcanvas.com, reject
 # > 其他广告
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
