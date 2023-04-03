@@ -6,7 +6,7 @@ host-keyword, sdk.open.talk.getui.com, reject
 host-keyword, cm-10-35.getui.com, reject
 host-keyword, c-hzgt2.getui.com, reject
 HOST-SUFFIX,sdk.open.talk.igexin.com, reject
-# 工商银行
+# > 工商银行
 HOST, pageviewp.icbc.com.cn, REJECT
 # > 云闪付
 HOST, ads.95516.com, REJECT
@@ -1269,6 +1269,12 @@ host-suffix, applovin.com, reject
 host-suffix, appier.net, reject
 host-suffix, adsmoloco.com, reject
 host-suffix, adcanvas.com, reject
+# > 蜘蛛纸牌
+host-suffix, dc.sigmob.cn, reject
+host-suffix, p2-pro.a.yximgs.com, reject
+host-suffix, p1-lm.adukwai.com, reject
+host-suffix, ali-ad.a.yximgs.com, reject
+HOST, open.e.kuaishou.com, reject
 # > 其他广告
 host-keyword,extlog.snssdk.com, reject
 host-keyword,is.snssdk.com, reject
