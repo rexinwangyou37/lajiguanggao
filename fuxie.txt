@@ -1332,8 +1332,6 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg url reject
 
 # > 拦截APP更新提示弹窗
-# > 邮政银行 #更新弹窗
-^https:\/\/static\.mobile-bank\.psbc\.com\/mgs url reject
 # > 汇丰汇选 #更新弹窗
 ^https:\/\/m\.prod\.app\.hsbcfts\.com\.cn\/api\/sapp\/biz\/config\/open\/queryappversion\?channelCode= url reject-dict
 # > 广汽传祺 #更新弹窗
