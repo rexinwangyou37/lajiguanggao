@@ -185,7 +185,6 @@ HOST, awaken.amap.com, REJECT
 HOST, free-aos-cdn-image.amap.com, REJECT
 # > 美团
 HOST, flowplus.meituan.net, reject
-HOST-SUFFIX, analytics.meituan.net, reject
 HOST-SUFFIX, meituan.xn--io0a7i, reject
 HOST-SUFFIX, meituan.yoga, reject
 HOST-SUFFIX, meituangov.cn, reject
