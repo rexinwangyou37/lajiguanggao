@@ -1067,6 +1067,7 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 ^https?:\/\/games\.mobileapi\.hupu\.com\/.+?\/status\/init url reject
 ^https?:\/\/games\.mobileapi\.hupu\.com\/\d\/(?:\d\.){2}\d\/status\/init url reject
 # > CSDN
+^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList? url reject
 ^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad url reject
 # > 萤石
 ^https?:\/\/i\.ys7\.com\/api\/ads url reject
