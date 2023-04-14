@@ -1141,10 +1141,10 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 动画疯(黑屏25秒)
 ^https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v\d/(token|m3u8).php\? url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutAnimeAds.js
 # > 滴滴出行（推荐英文版）
-https?://res\.xiaojukeji\.com\/resapi\/activity\/mget url reject-dict
-https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) url reject
+^https?://res\.xiaojukeji\.com\/resapi\/activity\/mget url reject-dict
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) url reject
 # > 滴滴打车
- ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
 # > 滴滴
 ^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg url reject
 # > 宝宝树
