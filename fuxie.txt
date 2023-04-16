@@ -1394,7 +1394,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 ^https:\/\/miniprogram\.ishansong\.com\/cms\/faq\/query url reject-dict
 ^https:\/\/ads\.ishansong\.com\/advert url reject-dict
 # > 怪兽充电 微信小程序
-^https:\/\/aag\.enmonster\.com\/apa\/index\/advert\/skin url reject
+^https:\/\/aag\.enmonster\.com\/apa\/(index\/)?advert\/(skin|multi\/positions|demand\/home\/poster) url reject
 # > 小电充电 微信小程序
 ^https:\/\/smarket\.dian\.so url reject-dict
 ^https:\/\/file\.dian\.so\/c\/leto url reject-dict
