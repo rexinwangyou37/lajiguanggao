@@ -1373,8 +1373,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/popup url reject-dict
 ^https:\/\/3pp\.starbucks\.com\.cn\/wxmem\/index\/(banner|global) url reject-dict
 # > 奈雪 微信小程序
-^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/v2 url reject-dict
-^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes url reject-dict
+^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/(resource|index)\/(config|activeConfig)\/(homeBannerNodes|v2) url reject-dict
 # > 丰巢 微信小程序
 ^https:\/\/webchatapp\.fcbox\.com\/fcboxactivityweb\/api\/v2\/clientPage url reject-dict
 ^https:\/\/dsp\.fcbox\.com url reject-dict
