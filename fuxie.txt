@@ -1386,7 +1386,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 奈雪 微信小程序
 ^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/(resource|index)\/(config|activeConfig)\/(homeBannerNodes|v2) url reject-dict
 # > 茶颜悦色 微信小程序
-^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/ccyse.js
+^https:\/\/miniapp\.sexytea2013\.com\/cms\/slot\/queryByCodes\?codes=INDEX_TOP_BANNER url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/chayan.js
 # > 喜茶 微信小程序
 ^https:\/\/go\.heytea\.com\/api\/service-portal\/vip url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/heytea.js
 # > 茶百道 微信小程序
@@ -1443,8 +1443,8 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 曹操出行 微信小程序
 ^https:\/\/minicap\.caocaokeji\.cn\/advert-bss\/pullAdvert url reject-dict
 # > 青桔 微信小程序
-^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=(cms\.htw\.delivery|prd\.task|hm\.fa) url reject-dict
-^https:\/\/star\.xiaojukeji\.com\/config url reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=(cms\.htw\.delivery|hm\.fa\.combineHomepageInfo|hm\.fa\.mallRecommend) url reject-dict
+^https:\/\/htwkop\.xiaojukeji\.com\/gateway\?api=hm\.fa\.homeConfig url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/qingju.js
 # > 货拉拉 微信小程序
 ^https:\/\/appuser-static\.huolala\.cn\/imgs url reject-dict
 ^https:\/\/qapi\.huolala\.cn\/(ads|home_new_user|get_service_list) url reject-dict
