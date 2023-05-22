@@ -1381,8 +1381,8 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 和风天气
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? url reject-dict
 # > 宁聚
-^http?:\/\/api\.nj\.nbtv\.cn\/v\d\/advertise\/advertise-r1\/get-list\?data=u8obKDIrIWt2NR9wBuMwQ5O61eEsP url reject
-^http?:\/\/api\.nj\.nbtv\.cn\/v\d\/common\/system-boot-inform\/detail url reject
+^https?:\/\/api\.nj\.nbtv\.cn\/v\d\/advertise\/advertise-r1\/get-list\?data=u8obKDIrIWt2NR9wBuMwQ5O61eEsP url reject
+^https?:\/\/api\.nj\.nbtv\.cn\/v\d\/common\/system-boot-inform\/detail url reject
 
 # > 拦截APP更新提示弹窗
 # > 汇丰汇选 #更新弹窗
