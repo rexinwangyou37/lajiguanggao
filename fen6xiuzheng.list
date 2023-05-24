@@ -30,6 +30,9 @@ host-keyword, gsa.apple.com, direct
 host-keyword, ess.apple.com, direct
 # > QQ空间
 host-keyword, ctc.qzs.qzone.qq.com, direct
+# > 携程
+host-keyword, aw-s.tripcdn.com, direct
+host-keyword, trip.com, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
