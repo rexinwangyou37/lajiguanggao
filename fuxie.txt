@@ -268,16 +268,11 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 熊猫直播
 ^https?:\/\/static\.api\.m\.panda\.tv\/index\.php\?method=clientconf\.firstscreen&__version=(play_cnmb|(\d+\.){0,3}\d+)&__plat=ios&__channel=appstore url reject-img
 # > 百度输入法
-^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input url response-body "data":\s?\{.+\} response-body "data":{control:{},service: {},pubparam:{bd_version:"11.6.0.233",device_ua:"iphone"},},}
-# > 开屏广告
-^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads/list url reject-dict
-# > 活动中心
-^https?:\/\/mime\.baidu\.com\/v5\/custom_page\/layout url reject-dict
-# > 推荐短语 
-^https?:\/\/mime\.baidu\.com\/(sapi\/|imrobot\/)?v1\/(lccorpus\/usercorpussync|circle\/joinedlist|pub\/relation\/get_robot_list|lccorpus\/(applist|pannellist)) url response-body "data":\s?\{.+\} response-body "data": {"list": [],"robot_info": [],"circle _list": []}}
-^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list url response-body "data":\s?\{.+\} response-body "data": {"list": [],"robot_info": [],"circle _list": [],}
-^https?:\/\/imeres\.baidu\.com\/imeres\/(emot-pack-test|imemmi-public)(\/\/)?\/upload\/imags\/.+\.(mp4|png|jpg|gif|jpeg) url reject-img
-^https:\/\/imeres\.baidu\.com\/common\/image2fjpeg.+\.png url reject-img
+^http:\/\/r6\.mo\.baidu\.com\/res\/file/advertisement\/files\/.+\.jpg url reject
+^http:\/\/res\.mi\.baidu\.com\/imeres\/ime-res\/advertisement\/files\/.+\.jpg url reject
+^https:\/\/mime\.baidu\.com\/v5\/activity\/advertisementnonrealtime url reject
+^https:\/\/mime\.baidu\.com\/v5\/start_screen_ads\/list url reject
+^https:\/\/mime\.baidu\.com\/v5\/hotpatch\/check\?hotpatch url reject
 # > 讯飞
 ^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
 # > 搜狗输入法
