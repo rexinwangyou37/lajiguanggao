@@ -812,7 +812,6 @@ host-keyword, dm.toutiao.com, reject
 host-keyword, dm.pstatp.com, reject
 host-keyword, dm.bytedance.com, reject
 host-keyword, uop.umeng.com, reject
-host-keyword, policy.jd.com, reject
 host-keyword, kepler.jd.com, reject
 host-keyword, bdsp.x.jd.com, reject
 host-keyword, keplerapi.jd.com, reject
