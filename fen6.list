@@ -806,6 +806,7 @@ host-keyword, static.wkanx.com, reject
 host-keyword, config.y5en.com, reject
 # > 今日头条
 host, dm.toutiao.com, reject
+host-keyword, policy.jd.com, reject
 host-keyword, ad.toutiao.com, reject
 host-keyword, clk.gentags.net, reject
 host-keyword, dm.toutiao.com, reject
