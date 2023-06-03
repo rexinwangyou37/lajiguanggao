@@ -1037,7 +1037,7 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 # > spotify音乐
 ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 # > 国美电器
-^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/(\w+\.jsp|sale\w+\.jsp） url reject
+^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/(\w+\.jsp|sale\w+\.jsp) url reject
 # > 怪兽充电
 https?:\/\/awg\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert\/skin) url reject-dict
 # > 蜗牛睡眠
