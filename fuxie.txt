@@ -73,7 +73,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > 动卡空间（3秒倒计时还在）
 ^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/appspace-getway\/getWay\/dkkj-system-web\/system\/v\d\/init-config url reject-200
 # > 发现精彩
-^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/.+1125.+2436 url reject-200
+^https?:\/\/static\.95508\.com\/mmg\/images\/ads\/.+\/.+1125 url reject-200
 # > 广发银行
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/(advertising|accurate)\/202\d{5}\/.*.(png|jpg) url reject-200
 ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) url reject-img
