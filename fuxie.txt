@@ -121,9 +121,9 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > 富途牛牛
 ^https?:\/\/api\d\.futunn\.com\/ad\/ url reject
 ^https?:\/\/api\.futunn\.com\/v\d\/ad\/ url reject
-^https:\/\/api\.futunn\.com\/v2\/(config|optimus)\/(promote-config|my-homepage-config) url reject-dict
+^https:\/\/api\.futunn\.com\/v2\/(config|optimus)\/(promote-config|my-homepage-config|) url reject-dict
 # > 星财富
-^https?:\/\/operationapi\.fosunhanig\.com\/ad\/v\d\/(PopupAdList|ScreenAdList) url reject-200
+^https?:\/\/operationapi\.fosunhanig\.com\/ad\/v\d\/(PopupAdList|ScreenAdList|BannerList) url reject-200
 # > 天天基金
 ^https?:\/\/j5\.dfcfw\.com\/WG\/conf\/202[0-9]{5}/.*.(jpg|png) url reject-200
 # > 同花顺
