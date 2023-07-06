@@ -657,7 +657,7 @@ https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* url reject
 ^https?:\/\/mob\.mddcloud\.com\.cn\/api\/(ad|advert)\/ url reject
 # > 妈妈网孕育
 ^https:\/\/qimg\.cdnmama\.com\/rd url reject-dict
-# >> 咪咕
+# > 咪咕
 ^https?+:\/\/gg\w+?\.cmvideo\.cn\/v\d\/iflyad\/ url reject-200
 ^https?+:\/\/ggic\d?\.cmvideo\.cn\/ad\/ url reject-200
 ^https?+:\/\/ggx\.cmvideo\.cn\/request\/ url reject-200
@@ -948,13 +948,13 @@ https?:\/\/api\.taptapdada\.com\/startup\-logo\/v1\/combo\? url reject-dict
 ^https?:\/\/open3\.vistastory\.com\/v\d\/api\/inde/loading_ad url reject-200
 
 # >>>>>>>>>>>>>>> ✅ W开头 ✅ <<<<<<<<<<<<<<
-# >> 网易新闻
+# > 网易新闻
 ^https?+:\/\/c\.m\.163\.com\/nc\/gl\/ url reject-200
-# >> 网易有钱
+# > 网易有钱
 ^https?+:\/\/client\.mail\.163\.com\/apptrack\/confinfo\/searchMultiAds url reject-200
-# >> 网易严选
+# > 网易严选
 ^https?+:\/\/support\.you\.163\.com\/xhr\/boot\/getBootMedia\.json url reject-200
-# >> 网易蜗牛读书
+# > 网易蜗牛读书
 ^https?+:\/\/easyreadfs\.nosdn\.127\.net\/ad-material\/ url reject-200
 ^https?+:\/\/p\.du\.163\.com\/ad\/ url reject-200
 http:\/\/analytics\.163\.com\/ntes url reject
