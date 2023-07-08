@@ -151,7 +151,7 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 # > 火箭软件库
 ^https:\/\/jt\.jxjt888\.top\/wp\-json\/wp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js
 # > 横店电影 #开屏广告
-^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/1 url echo-response https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/hengdian.json
+^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/1 url echo-response application/json echo-response https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/hengdian.json
 # > 横店电影 #顶部+中间横幅广告
 ^https:\/\/api\.hengdianfilm\.com\/\/cinema\/queryAvailableBannerInfo\/(2|4)\?cid= url reject-dict
 
