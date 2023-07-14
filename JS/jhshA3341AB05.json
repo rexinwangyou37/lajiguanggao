@@ -15,8 +15,28 @@
         "IS_DISPLAY" : "1"
       },
       {
+        "STOREY_NM" : "数字人民币专区广告",
+        "STOREY_TYPE" : "38",
+        "IS_DISPLAY" : "1"
+      },
+      {
+        "STOREY_NM" : "数字人民币活动广告",
+        "STOREY_TYPE" : "39",
+        "IS_DISPLAY" : "1"
+      },
+      {
+        "STOREY_NM" : "数字人民币知识广告",
+        "STOREY_TYPE" : "40",
+        "IS_DISPLAY" : "1"
+      },
+      {
         "STOREY_NM" : "节日广告2.0",
         "STOREY_TYPE" : "61",
+        "IS_DISPLAY" : "1"
+      },
+      {
+        "STOREY_NM" : "金刚区",
+        "STOREY_TYPE" : "45",
         "IS_DISPLAY" : "1"
       },
     ]
