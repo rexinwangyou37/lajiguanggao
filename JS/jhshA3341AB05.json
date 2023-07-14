@@ -35,6 +35,16 @@
         "IS_DISPLAY" : "1"
       },
       {
+        "STOREY_NM" : "种草",
+        "STOREY_TYPE" : "66",
+        "IS_DISPLAY" : "1"
+      },
+      {
+        "STOREY_NM" : "好评",
+        "STOREY_TYPE" : "67",
+        "IS_DISPLAY" : "1"
+      },
+      {
         "STOREY_NM" : "金刚区",
         "STOREY_TYPE" : "45",
         "IS_DISPLAY" : "1"
