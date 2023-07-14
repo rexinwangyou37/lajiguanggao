@@ -224,6 +224,8 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 ^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/recommend\/performances url reject-dict
 # > 猫眼电影小程序 #首页底部推荐
 ^https:\/\/api\.maoyan\.com\/sns\/common\/feed\/channel\/v2\/list\.json url reject-dict
+# > 猫眼电影小程序 #演出页面全部拦截
+^https:\/\/wx\.maoyan\.com\/maoyansh\/myshow\/ajax\/ad\/detail url reject-dict
 
 # >>>>>>>>>>>>>>> ✅ N开头 ✅ <<<<<<<<<<<<<<
 # > 奈雪
