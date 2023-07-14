@@ -483,57 +483,61 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 
 # >>>>>>>>>>>>>>> ✅ I开头 ✅ <<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>> ✅ J开头 ✅ <<<<<<<<<<<<<<
-# > 建行生活
+# > 建行生活 #开屏广告
 ^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
-# > 吉林银行
+# > 建行生活 #我的页面悬浮广告 
+^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? url response-body "TAG_AD_INFO" response-body "TAG_AD_INFO0"
+# > 建行生活 #删除首页+金融+我的多个横幅等乱七八糟的广告
+^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05 url echo-response application/json echo-response https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/jhshA3341AB05.json
+# > 吉林银行 #开屏广告
 ^https:\/\/cdn\.jlbank\.com\.cn\/jlstaticresource\/APPSTART url reject-200
-# > 江苏苏宁银行
+# > 江苏苏宁银行 #开屏广告
 ^https:\/\/appbank\.suningbank\.com\/channel\/pubresource url reject-200
-# > 京东
+# > 京东 #开屏广告
 ^https?:\/\/m\.360buyimg\.com\/mobilecms\/s1125x2436_jfs url reject-200
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start url reject-dict
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=queryMaterialAdverts url reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotWords url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/jd_json.js
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=hotSearchTerms url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/jd_json.js
-# > 京东极速版
+# > 京东极速版 #开屏广告
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_advertising url response-body jdLiteAdvertisingVO response-body ddgksf2013
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=lite_SmartPush url response-body pushData response-body ddgksf2013
-# > 京东健康
+# > 京东健康 #开屏广告
 ^https?:\/\/m\.360buyimg\.com\/babel\/jfs\/t1\/[0-9]{6}\/[0-9]{2}\/[0-9]{5}\/[0-9]{6}\/.*.jpg url reject-200
 ^https?:\/\/m\.360buyimg\.com\/babel\/jfs\/t1\/180291\/5\/23800\/294871\/625f5da2E13ac0ba3\/230238c767c61b6d\.jpg url reject
-# > 京喜
+# > 京喜 #开屏广告
 ^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_show url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/startup.js
-# > 京东金融
+# > 京东金融 #开屏广告
 ^https?:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/(new)?na\/m\/getLoadingPicture url reject-200
-# > 京东读书
+# > 京东读书 #开屏广告
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens url reject-200
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup url reject-200
-#> 京东云无线宝
+#> 京东云无线宝 #开屏广告
 ^https?:\/\/router-app-api\.jdcloud\.com\/v\d\/board\/routerAppSplash url reject-200
-# > 驾校一点通
+# > 驾校一点通 #开屏广告
 ^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfall(Bidding)?\/find url reject
-# > 驾考宝典
+# > 驾考宝典 #开屏广告
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject
 ^https?:\/\/789\.kakamobi\.cn\/.+adver url reject-img
 ^https?:\/\/smart\.789\.image\.mucang\.cn\/advert url reject-img
-# > 交管12123
+# > 交管12123 #开屏广告
 ^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery url reject-200
-# > 韭菜公社（开屏广告干净了,有小部分误杀）
+# > 韭菜公社（开屏广告干净了,有小部分误杀） #开屏广告
 ^https?:\/\/jiucaigongshe\.oss-cn-beijing\.aliyuncs\.com\/.*.png url reject-200
-# > 韭菜公社（开屏倒计时还在,没有误杀）
+# > 韭菜公社（开屏倒计时还在,没有误杀） #开屏广告
 ^https?:\/\/jiucaigongshe\.oss-cn-beijing\.aliyuncs\.com\/[A-Z0-9]{8}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{12}\.png url reject-200
-# > 机核网
+# > 机核网 #开屏广告
 ^https?:\/\/www\.gcores\.com\/gapi\/v1\/app-start-pages\?page url reject-dict
-# > 江苏移动
+# > 江苏移动 #开屏广告
 ^https?+:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query url reject-200
-# > 界面新闻
+# > 界面新闻 #开屏广告
 ^https?:\/\/img\.jiemian\.com\/ads\/ url reject
-# > 金十数据开屏广告和应用内弹窗
+# > 金十数据 #开屏广告和应用内弹窗
 ^https?:\/\/jad-api\.jin10\.com\/ad url reject
-# > 加油广东
+# > 加油广东 #开屏广告
 ^https?:\/\/img\.gdoil\.cn\/upload\/ad\/.*.(jpg|png) url reject-200
-# > 简讯
+# > 简讯 #开屏广告
 ^https?:\/\/api\.tipsoon\.com\/api\/v1\/top\/ad url reject-img
 
 # >>>>>>>>>>>>>>> ✅ K开头 ✅ <<<<<<<<<<<<<<
