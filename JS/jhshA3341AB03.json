@@ -1,0 +1,65 @@
+{
+  "errMsg" : "",
+  "data" : {
+    "SYSTEM_TIME" : "2023-07-13 08:40:43",
+    "LIMIT_COUPON_INFO" : [
+      {
+        "CLD_COUPON_TYPE" : "msps",
+        "COUPON_ID" : "393193",
+        "COUPON_ICON" : "https://res.yunbusiness.ccb.com/service/resource/mng/timeLimitAcMng/2023/202307/20230706/TimeLimit/2665834b-b67c-4b2c-981c-fbecc37b1e9b.png",
+        "COUPON_NAME" : "【每日好券】四川商超/轻食满12元减6元券（建行生活卡专享）"
+      },
+      {
+        "CLD_COUPON_TYPE" : "khhk",
+        "DCCP_BSC_INF_SN" : "005001",
+        "COUPON_ICON" : "https://res.yunbusiness.ccb.com/service/resource/mng/timeLimitAcMng/2023/202307/20230706/TimeLimit/ba1d03a3-5eb5-4500-8b05-e0e96cc732f9.png",
+        "COUPON_NAME" : "【饿了么】限时好券外卖满35元减7元券",
+        "COUPON_ID" : "YHQ2023070402776"
+      },
+      {
+        "CLD_COUPON_TYPE" : "msps",
+        "COUPON_ID" : "407689",
+        "COUPON_ICON" : "https://res.yunbusiness.ccb.com/service/resource/mng/timeLimitAcMng/2023/202307/20230706/TimeLimit/c9b5030e-a6e6-4331-bdb6-440380588acc.png",
+        "COUPON_NAME" : "限时好券电影满20元减8元券（龙卡信用卡专享）"
+      }
+    ],
+    "HAS_GOOD_STORE_AD" : "0",
+    "LIFE_COUPON_ACT_DATE_ED" : null,
+    "NEED_LIMIT_COUPON" : "0",
+    "ACT_SCENE_SHOW_TIME" : "2023-07-06 16:00:00",
+    "LIFE_COUPON_ACT_TIME_ED" : null,
+    "LIMIT_COUPON_ACT_DATE_ST" : "2023-07-13",
+    "LIFE_COUPON_SPECIAL_AREA" : null,
+    "GOOD_STORE_AD_INFO" : null,
+    "LIMIT_COUPON_ACT_ID" : "20230706070000000139",
+    "LIFE_COUPON_ACT_DATE_ST" : null,
+    "LIMIT_COUPON_ACT_TIME_ST" : "10:00:00",
+    "LIFE_COUPON_ACT_TIME_ST" : null,
+    "TAG_AD_INFO" : [
+    ],
+    "LIMIT_COUPON_ACT_DATE_ED" : "2023-07-13",
+    "LIMIT_COUPON_ACT_STATUS" : "2",
+    "LIMIT_COUPON_SPECIAL_AREA" : "1",
+    "LIMIT_COUPON_ACT_TIME_ED" : "23:59:58",
+    "MEBCT_AD_INFO" : [
+      {
+        "LOGIN_REQUIRED" : "1",
+        "TYPE" : "8",
+        "AD_ID" : "20230526090000000120",
+        "CRT_DTM" : "20230526121802",
+        "AD_NAME" : "四川-个人中心-企业微信0529",
+        "SECOND_AD_TYPE" : "6",
+        "REGION_LEVEL" : "2",
+        "REFE_TYPE" : "4",
+        "AD_SORT" : "4",
+        "AD_REMAKE" : "四川-个人中心-企业微信0529",
+        "AD_IMG" : "https://res.yunbusiness.ccb.com/service/resource/mng/adMng/2023/202305/20230526/20230526090000000120/70d6ec07-a875-432f-8e8d-7e7ddbce94bf.jpg",
+        "PLACECHANNEL" : 1,
+        "REGION_CODE" : "510000",
+        "WHITE_FLAG" : "0",
+        "AD_URL" : "https://lsjr.ccb.com/lk/9eMP"
+      }
+    ]
+  },
+  "errCode" : "0"
+}
