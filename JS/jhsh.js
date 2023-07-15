@@ -1,15 +1,91 @@
-if ($response.body) {
-  var obj = JSON.parse($response.body);
-  if (obj.data.TAG_AD_INFO)｛
-    console.log("去除广告1");
-    obj.TAG_AD_INFO = [];
+/**************************************
+作者:Zoo
+日期:2023.07.14
+使用教程:
+1.复制Cookie脚本到重写
+2.复制[task_local]内容到本地
+3.圈x开抓包手动签到一次，然后关闭抓包搜https://yunbusiness.ccb.com/clp_coupon/txCtrl?txcode=A3341A040，把请求体文本查看，内容全部复制到url.body='{复制到这个里面}' 然后保存到本地就可以了
+4.关闭Cookie脚本
+[rewrite_local]
+^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode\=A3341A040 url script-request-header https://raw.githubusercontent.com/Crazy-Z7/Task/main/JhshCookie.js
+
+[task_local]
+40 8 * * * https://raw.githubusercontent.com/Crazy-Z7/Task/main/Jhsh.js, tag=建行生活积分签到,enabled=true
+[MITM]
+hostname = yunbusiness.ccb.com
+*****************************************/
+
+
+const cookieName = '建行生活'
+const signurlKey = 'photonmang_signurl_jhsh'
+const signheaderKey = 'photonmang_signheader_jhsh'
+const photonmang = init()
+const signurlVal = photonmang.getdata(signurlKey)
+const signheaderVal = photonmang.getdata(signheaderKey)
+sign()
+function sign() {
+  const url = { url: `https://yunbusiness.ccb.com/clp_coupon/txCtrl?txcode=A3341A040`, headers: JSON.parse(signheaderVal) }
+  //请求体内容用文本查看，然后复制到下方括号里面，不要把文本里面的括号也复制了over!
+    url.内容 = '{"ACT_ID":"20230628070000000001","MEB_ID":"YSM202201085165834","USR_TEL":"18659803717","REGION_CODE":"511700","chnlType":"1","regionCode":"511700"}'
+  photonmang.post(url, (error, response, data) => {
+    photonmang.log(`${cookieName}, data: ${data}`)
+    const 标题 = `${cookieName}`
+    let subTitle = ''
+    let detail = ''
+    const result = JSON.parse(data)
+    if (result.代码 == 1) {
+      subTitle = `签到结果: 签到成功`
+      
+    } else if (result.代码 == 0) {
+      subTitle = `签到结果: ${result.Message}`
+    } 
+    photonmang.msg(title, subTitle)
+    photonmang.已完成()
+  })
+}
+
+
+
+function init() {
+  isSurge = () => {
+    return undefined === this。$httpClient ? false : true
   }
-  if (obj.data.MEBCT_AD_INFO)｛
-    console.log("去除广告2");
-    obj.MEBCT_AD_INFO = [];
+  isQuanX = () => {
+    return undefined === this。$task ? false : true
   }
-  $done({ body: JSON.stringify(obj) });
-} else {
-    console.log("去除广告3 返回空对象");
-  $done({})
+  getdata = (密钥) => {
+    if (isSurge()) return $persistentStore.read(密钥)
+    if (isQuanX()) return $prefs.valueForKey(密钥)
   }
+  setdata = (密钥, val) => {
+    if (isSurge()) return $persistentStore.撰写(key, val)
+    if (isQuanX()) return $prefs.setValueForKey(key, val)
+  }
+  msg = (标题, subtitle, 内容) => {
+    if (isSurge()) $notification.post(title, subtitle, body)
+    if (isQuanX()) $notify(title, subtitle, body)
+  }
+  log = (message) => console.log(message)
+  get = (url, cb) => {
+    if (isSurge()) {
+      $httpClient.get(url, cb)
+    }
+    if (isQuanX()) {
+      url.method = 'GET'
+      $task.fetch(url)。then((resp) => cb(null, {}, resp.内容))
+    }
+  }
+  post = (url, cb) => {
+    if (isSurge()) {
+      $httpClient.post(url, cb)
+    }
+    if (isQuanX()) {
+      url.method = 'POST'
+      $task.fetch(url)。then((resp) => cb(null, {}, resp.内容))
+    }
+  }
+  done = (value = {}) => {
+    $done(value)
+  }
+  return { isSurge, isQuanX, msg, log, getdata, setdata, get, post, 已完成 }
+}
