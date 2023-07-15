@@ -26,21 +26,21 @@ sign()
 function sign() {
   const url = { url: `https://yunbusiness.ccb.com/clp_coupon/txCtrl?txcode=A3341A040`, headers: JSON.parse(signheaderVal) }
   //请求体内容用文本查看，然后复制到下方括号里面，不要把文本里面的括号也复制了over!
-    url.内容 = '{"ACT_ID":"20230628070000000001","MEB_ID":"YSM202201085165834","USR_TEL":"18659803717","REGION_CODE":"511700","chnlType":"1","regionCode":"511700"}'
+    url.body = '{"ACT_ID":"20230628070000000001","MEB_ID":"YSM202201085165834","USR_TEL":"18659803717","REGION_CODE":"511700","chnlType":"1","regionCode":"511700"}'
   photonmang.post(url, (error, response, data) => {
     photonmang.log(`${cookieName}, data: ${data}`)
-    const 标题 = `${cookieName}`
+    const title = `${cookieName}`
     let subTitle = ''
     let detail = ''
     const result = JSON.parse(data)
-    if (result.代码 == 1) {
+    if (result.Code == 1) {
       subTitle = `签到结果: 签到成功`
       
-    } else if (result.代码 == 0) {
+    } else if (result.Code == 0) {
       subTitle = `签到结果: ${result.Message}`
     } 
     photonmang.msg(title, subTitle)
-    photonmang.已完成()
+    photonmang.done()
   })
 }
 
@@ -48,20 +48,20 @@ function sign() {
 
 function init() {
   isSurge = () => {
-    return undefined === this。$httpClient ? false : true
+    return undefined === this.$httpClient ? false : true
   }
   isQuanX = () => {
-    return undefined === this。$task ? false : true
+    return undefined === this.$task ? false : true
   }
-  getdata = (密钥) => {
-    if (isSurge()) return $persistentStore.read(密钥)
-    if (isQuanX()) return $prefs.valueForKey(密钥)
+  getdata = (key) => {
+    if (isSurge()) return $persistentStore.read(key)
+    if (isQuanX()) return $prefs.valueForKey(key)
   }
-  setdata = (密钥, val) => {
-    if (isSurge()) return $persistentStore.撰写(key, val)
+  setdata = (key, val) => {
+    if (isSurge()) return $persistentStore.write(key, val)
     if (isQuanX()) return $prefs.setValueForKey(key, val)
   }
-  msg = (标题, subtitle, 内容) => {
+  msg = (title, subtitle, body) => {
     if (isSurge()) $notification.post(title, subtitle, body)
     if (isQuanX()) $notify(title, subtitle, body)
   }
@@ -72,7 +72,7 @@ function init() {
     }
     if (isQuanX()) {
       url.method = 'GET'
-      $task.fetch(url)。then((resp) => cb(null, {}, resp.内容))
+      $task.fetch(url).then((resp) => cb(null, {}, resp.body))
     }
   }
   post = (url, cb) => {
@@ -81,11 +81,11 @@ function init() {
     }
     if (isQuanX()) {
       url.method = 'POST'
-      $task.fetch(url)。then((resp) => cb(null, {}, resp.内容))
+      $task.fetch(url).then((resp) => cb(null, {}, resp.body))
     }
   }
   done = (value = {}) => {
     $done(value)
   }
-  return { isSurge, isQuanX, msg, log, getdata, setdata, get, post, 已完成 }
+  return { isSurge, isQuanX, msg, log, getdata, setdata, get, post, done }
 }
