@@ -67,8 +67,9 @@ host-keyword, mobilead.kuwo.cn, reject
 host, adsfile.bssdlbig.kugou.com, reject
 HOST-SUFFIX,oth.eve.mdt.qq.com, reject
 HOST,pgdt.gtimg.cn, reject
-HOST-SUFFIX,pgdt.gtimg.cn, reject
 HOST,pgdt.gtimg.com, reject
+HOST,btrace.qq.com, REJECT
+HOST,info6.video.qq.com, REJECT
 HOST,adsmind.gdtimg.com, reject
 HOST-SUFFIX,channel.fanxing.kugou.com, reject
 HOST-SUFFIX,d.kugou.com, reject
