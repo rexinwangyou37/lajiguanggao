@@ -26,7 +26,7 @@ sign()
 function sign() {
   const url = { url: `https://yunbusiness.ccb.com/clp_coupon/txCtrl?txcode=A3341A040`, headers: JSON.parse(signheaderVal) }
   //请求体内容用文本查看，然后复制到下方括号里面，不要把文本里面的括号也复制了over!
-    url.body = '{"ACT_ID":"20230628070000000001","MEB_ID":"YSM202201085165834","USR_TEL":"18659803717","REGION_CODE":"511700","chnlType":"1","regionCode":"511700"}'
+    url.body = '{"ACT_ID":"20230628070000000001","MEB_ID":"YSM202201085166654","USR_TEL":"18011250415","REGION_CODE":"511700","chnlType":"1","regionCode":"511700"}'
   photonmang.post(url, (error, response, data) => {
    const title = `${cookieName}`
   let subTitle = ''
