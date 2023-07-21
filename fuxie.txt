@@ -317,7 +317,8 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > 电E宝 #开屏广告
 ^https?:\/\/app\.95598pay\.com\/debapi\/adsite\/ url reject-200
 # > 大众点评 #开屏广告
-^https?:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
+^https:\/\/img\.meituan\.net\/dpmobile\/.*.(gif|jpg) url reject-200
+^https:\/\/img\.meituan\.net\/dpmobile\/.+93241\.png url reject-200
 # > 电视家 #开屏广告
 ^https?:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject
 ^https?:\/\/cdn\.dianshihome\.com\/static\/ad\/ url reject
