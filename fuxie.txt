@@ -1237,12 +1237,17 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > 视频广告请求
 (^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
 ^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject-200
-# > 瀑布流|搜索|播放页|短视频|贴片广告
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\? url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+^https:\/\/[\w-]+\.googlevideo\.com\/initplayback\?.+&oad url reject-dict
 # > 通用广告请求
 ^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject-200
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
+# > 瀑布流|搜索|播放页|短视频|贴片广告
+# > ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next)\? url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/youtube.js
+# > 请求体
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence)\? url script-request-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube-request.js
+# > 响应体
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube-response.js
 # > 有道词典 #开屏广告
 ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish url reject
 ^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish url reject-img
