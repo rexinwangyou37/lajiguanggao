@@ -649,8 +649,8 @@ https://dl-cu-hz.lechange.cn/oms-online/advertisementPush/* url reject
 ^https?:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+ url reject
 # > 美团众包 #开屏广告
 ^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage url reject-200
-# > 米家 #开屏广告
-^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab)\? url reject-dict
+# > 米家 #开屏广告+横幅广告
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|myTab|openingBanner)\? url reject-dict
 # > 米读 #开屏广告
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/getPopup$ url reject
 ^https:\/\/apiwz\.midukanshu\.com\/advert\/treasureInfo$ url reject
