@@ -138,9 +138,15 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list url echo-response application/json echo-response https://github.com/Keywos/rule/raw/main/mocks/mime.json
 ^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input url echo-response application/json echo-response https://github.com/Keywos/rule/raw/main/mocks/bd.json
 # > 百度网盘 #开屏广告
-^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list url reject-200
-^https?:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/ad url reject-200
-^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
+^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url script-response-body https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
+# > 百度网盘_设置信息流
+^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list url reject
+# > 百度网盘_通用广告
+^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad url reject
+# > 百度网盘_活动推广
+^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject
+# > 百度网盘_会员权益
+^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id url script-response-body https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
 # > 百度贴吧（副作用:新回复等通知功能不可用,需手动进入消息tab页点击查看）
 ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
 ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
