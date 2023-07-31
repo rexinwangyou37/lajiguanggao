@@ -37,6 +37,8 @@ host-keyword, trip.com, direct
 host-SUFFIX,bochk.com, direct
 host-SUFFIX,bochkonline.com, direct
 host-SUFFIX,etnet.com.hk, direct
+# > BoC Pay
+host-SUFFIX,bocpay.queue-it.net, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
