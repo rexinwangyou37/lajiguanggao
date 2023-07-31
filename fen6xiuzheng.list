@@ -34,8 +34,8 @@ host-keyword, ctc.qzs.qzone.qq.com, direct
 host-keyword, aw-s.tripcdn.com, direct
 host-keyword, trip.com, direct
 # > 中国银行(香港)
-host-SUFFIX,bochk.com
-host-SUFFIX,bochkonline.com
+host-SUFFIX,bochk.com, direct
+host-SUFFIX,bochkonline.com, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
