@@ -36,6 +36,7 @@ host-keyword, trip.com, direct
 # > 中国银行(香港)
 host-SUFFIX,bochk.com, direct
 host-SUFFIX,bochkonline.com, direct
+host-SUFFIX,etnet.com.hk, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
