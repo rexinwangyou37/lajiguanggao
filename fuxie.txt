@@ -296,8 +296,6 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/core url reject-dict
 # > 滴滴 #开屏广告
 ^https?:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/.*.jpg url reject
-# > 滴滴出行 微信小程序个人中心净化
-^https:\/\/common\.diditaxi\.com\.cn\/common\/v5 url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/didi.js
 # > 得物 #开屏广告
 ^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement url reject
 # > 到梦空间 #开屏广告
@@ -1204,12 +1202,10 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
 # > 小兔充充 #开屏广告
 ^https:\/\/ad\.xiaotucc\.com\/advert url reject
-^https:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity) url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/xiaotucc.js
 # > 星途starway #开屏广告
 ^https:\/\/app\.chinahxzq\.com\.cn:9302\/starway-api\/ad url reject-dict
 ^https:\/\/app\.chinahxzq\.com\.cn\/starway\/adShow url reject-dict
 # > 苏打校园 #开屏广告
-^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3AHOME%3ATOP url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/soda.js
 ^https:\/\/api\.sodalife\.xyz\/v1\/posters\?location=SODA_APP%3A(HOME%3ABOTTOM|HOME%3ACENTER|MINE%3ABOTTOM|REWARDS%3ACENTER) url reject-dict
 ^https:\/\/api\.sodalife\.xyz\/v1\/goods url reject-dict
 # > 苏周到   #更新弹窗
@@ -1314,7 +1310,6 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https:\/\/api\.ulife\.group\/auth\/account\/(getUpgradeStrategy|entrance) url reject-dict
 ^https:\/\/api\.ulife\.group\/market\/frontEntrance\/getThirdAdvertising\?displayPort=1&type=15 url reject-dict
 ^https:\/\/api\.ulife\.group\/market\/memberCard\/listMemberCard\?isShowSecondaryCard=1 url reject-dict
-^https:\/\/api\.ulife\.group\/market\/homeIconDetail\/list\/v7 url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/yx.js
 # > 游戏时光 #开屏广告
 ^http:\/\/app02\.vgtime\.com:8080\/vgtime-app\/api\/v2\/init\/ad\.json$ url reject-dict
 ^(http:\/\/www\.vgtime\.com\/app\/topic\/\d+\.jhtml\?.*?&close_ad=)false(&page=\d&sign=\w+&timestamp=\d+&font_size=\d$) url 302 $1true$2
