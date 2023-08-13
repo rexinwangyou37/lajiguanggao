@@ -126,9 +126,8 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 ^https:\/\/gz\.gongzijx\.com\/wp\-json\/wp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js
 # > 搞机师兄
 ^https:\/\/gjsx\.vip\/wp\-json\/wp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js
-# > 古茗
-^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/ming.js
-
+# > 古茗 微信小程序净化
+^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(ump|touch|external\/front) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/ming.js
 
 # >>>>>>>>>>>>>>> ✅ H开头 ✅ <<<<<<<<<<<<<<
 # > 花小猪打车
@@ -232,7 +231,6 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 ^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/index\/activeConfig\/v2 url reject-dict
 ^https:\/\/tm-api\.pin-dao\.cn\/home\/api\/resource\/config\/homeBannerNodes url reject-dict
 # > 挪瓦咖啡
-^https:\/\/webapi\.qmai\.cn\/web\/catering\/design\/homePage-Config url script-response-body https://raw.githubusercontent.com/jizhi0520/QX/main/kff.js
 ^https:\/\/webapi\.qmai\.cn\/web\/catering\/advertising\/ad url reject-dict
 ^https:\/\/images\.qmai\.cn\/s214925\/2023 url reject-dict
 
