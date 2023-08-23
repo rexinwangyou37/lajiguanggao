@@ -44,12 +44,12 @@ host,sdk.alibaba.com.ailbaba.me, direct
 host,img.ffzypic.com, direct
 host,img.bfzypic.com, direct
 host,img.kuaikanzy.net, direct
-host,vip.ffzy-play7.com, direct
-host,vip.ffzy-online2.com, direct
 host,vip.imgffzy.com, direct
 host,cdn.jsdelivr.net, direct
 host,bfzycdn.com, direct
 host-keyword,vip.kuaikan-cdn, direct
+host-keyword,vip.ffzy-play, direct
+host-keyword,vip.ffzy-online, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
