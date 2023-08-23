@@ -44,6 +44,7 @@ host,sdk.alibaba.com.ailbaba.me, direct
 host,img.ffzypic.com, direct
 host,img.bfzypic.com, direct
 host,vip.kuaikan-cdn3.com, direct
+host,vip.ffzy-play7.com, direct
 host,cdn.jsdelivr.net, direct
 
 # > 路由器后台
