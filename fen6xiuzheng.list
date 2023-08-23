@@ -46,6 +46,7 @@ host,img.bfzypic.com, direct
 host,vip.kuaikan-cdn3.com, direct
 host,vip.ffzy-play7.com, direct
 host,cdn.jsdelivr.net, direct
+host,s1.bfzycdn.com, direct
 
 # > 路由器后台
 ip-cidr, 192.168.0.1/24, direct
