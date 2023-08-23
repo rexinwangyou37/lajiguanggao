@@ -42,12 +42,14 @@ host-SUFFIX,bocpay.queue-it.net, direct
 # > 大师兄影视
 host,sdk.alibaba.com.ailbaba.me, direct
 host,img.ffzypic.com, direct
+host,img.liangzipic.com, direct
 host,img.bfzypic.com, direct
 host,img.kuaikanzy.net, direct
 host,vip.imgffzy.com, direct
+host,vip.ffzyread.com, direct
 host,cdn.jsdelivr.net, direct
-host,bfzycdn.com, direct
 host,image.maimn.com, direct
+host-keyword,bfzycdn.com, direct
 host-keyword,vip.kuaikan-cdn, direct
 host-keyword,vip.ffzy-play, direct
 host-keyword,vip.ffzy-online, direct
