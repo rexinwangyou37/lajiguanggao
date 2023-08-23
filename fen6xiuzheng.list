@@ -47,6 +47,7 @@ host,img.kuaikanzy.net, direct
 host,vip.imgffzy.com, direct
 host,cdn.jsdelivr.net, direct
 host,bfzycdn.com, direct
+host,image.maimn.com, direct
 host-keyword,vip.kuaikan-cdn, direct
 host-keyword,vip.ffzy-play, direct
 host-keyword,vip.ffzy-online, direct
