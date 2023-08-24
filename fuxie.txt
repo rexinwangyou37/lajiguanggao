@@ -371,6 +371,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/app\.variflight\.com\/v\d\/advert\/ url reject
 # > 飞猪旅行
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) url reject-dict
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner url reject-dict
 # > 返利网
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2023\/0[1-9]{1}\/.*.jpg url reject-200
 ^https?:\/\/l[0-9]{1}\.51fanli\.net\/app\/images\/splash\/2023\/1[0-2]{1}\/.*.jpg url reject-200
