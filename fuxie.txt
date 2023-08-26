@@ -383,59 +383,61 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject
 
 # >>>>>>>>>>>>>>> ✅ G开头 ✅ <<<<<<<<<<<<<<
-# > 光大银行
+# > 光大银行 #开屏广告
 ^https?:\/\/mobile\.cebbank\.com\/cebclient\/ClientNoticeList url reject-200
-# > 工银e生活
+# > 工银e生活 #开屏广告
 ^https?:\/\/pv\.elife\.icbc\.com\.cn\/OFSTPV\/utm\.gif url reject-200
-# > 工银e生活小程序
+# > 工银e生活小程序 #开屏广告
 ^https?:\/\/elife\.icbc\.com\.cn\/OFSTNEWBASE\/floorinfo\/getMantlePages\.do url reject-200
-# > 广发银行
+# > 广发银行 #开屏广告
 ^https?:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/(advertising|accurate)\/202\d{5}\/.*.(png|jpg) url reject-200
 ^https?:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d{25}\.(png|jpg) url reject-img
 # > \d{25}\.(png|jpg) url reject-img 只拦截25位纯数字命名的png和jpg格式图片
-# > 广州农商银行
+# > 广州农商银行 #开屏广告
 ^https?:\/\/mbank\.grcbank\.com\/ydyh\/resources\/startpage\/.*.(jpg|png) url reject-200
-# > 高德地图
+# > 高德地图 #净化
 ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amdc.js
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/ url reject-200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/app\/startup\/init\? url reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution\? url reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? url reject-dict
-# > 广西移动
+# > 广西移动 #开屏广告
 ^https?:\/\/gx\.10086\.cn\/zt-portal\/gxhzg\/portal\/app\/api\/v url reject-200
-# > 广东移动
+# > 广东移动 #开屏广告
 ^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 url reject-200
-# > 国泰君安君弘
+# > 国泰君安君弘 #开屏广告
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController url reject-200
 ^https?:\/\/dl[0-9]{1}\.app\.gtja\.com\/dzswem\/kvController url reject-200
-# > 盖得排行
+# > 盖得排行 #开屏广告
 https://zone.guiderank-app.com/guiderank-web/app/ad/listLaunchADByCity.do url reject
-# > 国美电器
+# > 国美电器 #开屏广告
 ^https?:\/\/prom\.mobile\.gome\.com\.cn\/mobile\/promotion\/promscms\/(\w+\.jsp|sale\w+\.jsp) url reject
-# > 国家地理杂志
+# > 国家地理杂志 #开屏广告
 ^https?:\/\/dili\.bdatu\.com\/jiekou\/ad\/ url reject
-# > 国家地理
+# > 国家地理 #开屏广告
 ^https?+:\/\/wap\.ngchina\.cn\/news\/adverts\/ url reject-200
-# > 挂号网（微医）
+# > 挂号网（微医） #开屏广告
 ^https?:\/\/kano\.guahao\.cn\/[a-zA-Z0-9]{12} url reject-200
 ^https?:\/\/kano\.guahao\.cn\/.+?\?resize=\d{3}-\d{4} url reject-img
 ^https?:\/\/app\.wy\.guahao\.com\/json\/white\/dayquestion\/getpopad url reject
-# > 怪兽充电
+# > 怪兽充电 #开屏广告
 https?:\/\/awg\.enmonster\.com\/apa\/(advert\/demand\/home\/poster|index\/advert\/skin) url reject-dict
-# > 冠寓开屏广告
+# > 冠寓开屏广告 #开屏广告
 https://guanyu.longfor.com/app-server/api/v1/main/start url reject
 # > 广汽传祺 #更新弹窗
 ^https:\/\/gsp\.gacmotor\.com\/gateway\/app-api\/app\/version\/latestupdate\?flatform=2&innerVersion= url reject-dict
-# > 广汽传祺
+# > 广汽传祺 #开屏广告
 ^https:\/\/gsp\.gacmotor\.com\/gateway\/webapi\/baseinfo\/advertise\/getAdvertiseByPositionCode\?positionCode=1 url reject-dict
-#> 广汽本田
+#> 广汽本田 #开屏广告
 ^https?:\/\/gha\.ghac\.cn\:8081\/base\/app\/api\/ad\/query\?adType=1 url reject-200
-# > 国家医保服务平台
+# > 国家医保服务平台 #开屏广告
 ^https:\/\/fuwu\.nhsa\.gov\.cn\/ebus\/fuwu\/api\/base\/cms\/iep\/web\/cms\/hmpgcfg\/queryAppHmpgCfgByApp url reject
-# > 冠寓开屏广告
+# > 冠寓开屏广告 #开屏广告
 ^https?:\/\/guanyu\.longfor\.com\/app-server\/api\/v1\/main\/start url reject
-# > 公交云
+# > 公交云 #开屏广告
 ^https?:\/\/m\.ibuscloud.com\/v2\/app\/getStartPage url reject
+# > 高铁管家 #开屏广告
+^http:\/\/cdn\.133\.cn\/md\/gtgj\/.+\/.+720x1280 url reject-dict
 
 # >>>>>>>>>>>>>>> ✅ H开头 ✅ <<<<<<<<<<<<<<
 # > 华彩生活 #开屏广告
