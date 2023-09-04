@@ -156,6 +156,7 @@ HOST-SUFFIX,bsiet.husky.sogou.com, reject
 host-suffix, jdqd.jd.com, reject
 host-suffix, shouji.sougou.com, reject
 ## QQ音乐广告
+HOST,ad.tencentmusic.com, reject
 HOST,tmeadcomm.y.qq.com, reject
 HOST,ad.tencentmusic.com, reject
 HOST,adstats.tencentmusic.com, reject
