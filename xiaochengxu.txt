@@ -169,6 +169,8 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 ^https:\/\/wxapp\.bestwehotel\.com\/gw3\/app-mini\/trip-hotel-banner\/activity\/getActivityInfo url reject-dict
 # > 交通银行信用卡小程序 #开屏广告
 ^https:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getGuidePageAds url reject-dict
+# > 交通银行信用卡小程序 #首页横幅广告
+^https:\/\/creditcardapp\.bankcomm\.com\/cnsvPmpaMdbcardWeb\/page\/getData\? url response-body "image" response-body "image0"
 
 # >>>>>>>>>>>>>>> ✅ K开头 ✅ <<<<<<<<<<<<<<
 # > 肯德基
