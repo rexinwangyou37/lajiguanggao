@@ -294,6 +294,34 @@
       "floorLayout" : "LL3",
       "floorId" : "ae19911def8d5ad4f1c8a8164a9044d8"
     },
+    {
+      "floorName" : "弹窗",
+      "floorType" : "Dialog",
+      "orderNum" : 16,
+      "sources" : [
+      ],
+      "floorLayout" : "L1",
+      "floorId" : "8b2dbec1143e3e92052e5cfd2a7a8e29"
+    },
+    {
+      "floorName" : "浮窗",
+      "floorType" : "Window",
+      "orderNum" : 17,
+      "sources" : [
+        {
+          "imgUrl" : "icon/202309221718200069518995.jpg",
+          "targetAddr" : "https://creditcard.ecitic.com/h5/youhui/365/index.html",
+          "orderNum" : 0,
+          "sourceChannel" : "H5",
+          "sourceName" : "精彩365 浮窗",
+          "sourceType" : "Window",
+          "floorId" : "ab28098fa157363223762f0bdfcc358a",
+          "sourceDesc" : ""
+        }
+      ],
+      "floorLayout" : "",
+      "floorId" : "ab28098fa157363223762f0bdfcc358a"
+    }
   ],
   "code" : "000000"
 }
