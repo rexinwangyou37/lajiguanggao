@@ -299,6 +299,26 @@
       "floorType" : "Dialog",
       "orderNum" : 16,
       "sources" : [
+        {
+          "imgUrl" : "null",
+          "targetAddr" : "https://lm.creditcard.ecitic.com/citiccard/lshop-front/bill/stage.html?qd=WX&rk=XCX&hd=SYTC",
+          "orderNum" : 0,
+          "sourceChannel" : "H5",
+          "sourceName" : "账单分期-弹窗",
+          "sourceType" : "Dialog",
+          "floorId" : "null",
+          "sourceDesc" : ""
+        },
+        {
+          "imgUrl" : "null",
+          "targetAddr" : "https://creditcard.ecitic.com/h5/shenqing/230823/index.html?sid=SJFWFSK",
+          "orderNum" : 1,
+          "sourceChannel" : "H5",
+          "sourceName" : "优秀卡-弹窗",
+          "sourceType" : "Dialog",
+          "floorId" : "8b2dbec1143e3e92052e5cfd2a7a8e29",
+          "sourceDesc" : ""
+        }
       ],
       "floorLayout" : "L1",
       "floorId" : "8b2dbec1143e3e92052e5cfd2a7a8e29"
