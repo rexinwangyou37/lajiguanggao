@@ -7,6 +7,7 @@ host-keyword, cm-10-35.getui.com, reject
 host-keyword, c-hzgt2.getui.com, reject
 HOST-SUFFIX,sdk.open.talk.igexin.com, reject
 # > 工商银行
+HOST, oisc.icbc.com.cn, REJECT
 HOST, pageviewp.icbc.com.cn, REJECT
 # > 云闪付
 HOST, ads.95516.com, REJECT
