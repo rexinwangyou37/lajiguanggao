@@ -74,7 +74,6 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ url reject
 # > 爱企查 #开屏广告
 ^https?:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum url reject-200
-^https?:\/\/aiqicha\.baidu\.com\/usercenter\/getvipinfoajax url script-request-body https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/Aiinquire/Aiinquire_crack.js
 # > 爱阅书香 #开屏广告
 ^https?:\/\/icc\.one\/iFreeTime\/xid32uxaoecnfv2\/ url reject
 
