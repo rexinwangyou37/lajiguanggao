@@ -321,13 +321,17 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https:\/\/appdmkj\.5idream\.net\/v2\/login\/message\/tip url reject-dict
 # > 大麦 #开屏广告
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome url reject-200
+# > 叮咚买菜 #开屏广告
+^https:\/\/maicai\.api\.ddxq\.mobi\/advert\/getAd\?ad_id url reject-dict
+# > 叮咚买菜 #新人弹窗
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop url reject-dict
 
 # >>>>>>>>>>>>>>> ✅ E开头 ✅ <<<<<<<<<<<<<<
 # > 饿了么 #开屏广告
 ^https:\/\/(nr-op|cube)\.elemecdn\.com\/.+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{4,},h_\d{4,}\/($|format,webp\/$) url reject
 # > e代驾 #开屏广告
 ^https?+:\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
-# > E充电
+# > E充电 #开屏广告
 ^https?:\/\/cdn-evone-ceph\.echargenet\.com\/gw-emas-cdn\/63c4e3b558bb610008969f89 url reject-200
 
 # >>>>>>>>>>>>>>> ✅ F开头 ✅ <<<<<<<<<<<<<<
