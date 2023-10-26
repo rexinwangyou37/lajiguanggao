@@ -1388,7 +1388,7 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 众邦银行（倒计时还在，点击任意位置跳过开屏动画） #开屏广告
 ^https?:\/\/direct\.z-bank\.com\/portal\/AdvertImageDownLoad4Mobile\.do url reject-200
 # > 涨乐财富通 #开屏广告+弹窗广告
-^https:\/\/c\.zhangle\.com\/pic\/mktg\/diversity\/.+\.jpg$ url reject-dict
+^https:\/\/c\.zhangle\.com\/pic\/mktg\/diversity\/[0-9]{13}\.(jpg|png)$ url reject-dict
 ^https:\/\/live\.inst-service\.htsc\.com\/live url reject-dict
 ^https:\/\/geetest\.htsc\.com:8888\/pre_get_token url reject-dict
 ^http:\/\/119\.29\.29\.98\/d url reject-dict
