@@ -156,6 +156,10 @@ host-keyword, business-cdn.shouji.sogou.com, reject
 # > 屏蔽京东和搜狗收集信息
 host-suffix, jdqd.jd.com, reject
 host-suffix, shouji.sougou.com, reject
+# > 京东DNS
+HOST, dns.jd.com, REJECT
+IP-CIDR, 101.124.19.122/32, REJECT
+IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
 ## QQ音乐广告
 HOST,ad.tencentmusic.com, reject
 HOST,tmeadcomm.y.qq.com, reject
