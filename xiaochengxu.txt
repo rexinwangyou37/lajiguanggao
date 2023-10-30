@@ -146,7 +146,7 @@ hostname = hwimg.beingfine.cn, learnywhere.cn, newton.gumingnc.com, gw-passenger
 ^https:\/\/api-fouth-mem\.huazhu\.com\/api\/rights\/bannerList url reject-dict
 # > 黑科技软件 #微信小程序净化
 ^https:\/\/hkj178.com/wp-json/mp/v2/advert/wechat url reject-200
-^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/scripts/applet.js
+^https:\/\/hkj178\.com\/wp\-json\/mp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js
 # > 黑科技软件源 #微信小程序净化
 ^https:\/\/qj\.bpojie\.com\/wp\-json\/wp\/v2\/posts url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/applet.js
 # > 火箭软件库 #微信小程序净化
