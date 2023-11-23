@@ -506,7 +506,7 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 # >>>>>>>>>>>>>>> ✅ I开头 ✅ <<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>> ✅ J开头 ✅ <<<<<<<<<<<<<<
 # > 建行生活 #开屏广告
-^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A00(6|9) url reject-200
+^https?:\/\/yunbusiness\.ccb\.com\/clp_service\/txCtrl\?txcode=A3341A(006|009|120) url reject-dict
 # > 建行生活 #我的页面悬浮广告 
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? url response-body "TAG_AD_INFO" response-body "TAG_AD_INFO0"
 # > 建行生活 #删除首页+金融+我的多个横幅等乱七八糟的广告
@@ -1144,7 +1144,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/operationapi\.fosunhanig\.com\/ad\/v\d\/(PopupAdList|ScreenAdList|BannerList) url reject-200
 # > 向日葵 #开屏广告
 ^https?:\/\/client-api\.oray\.com\/materials\/SLCC_IOS_STARTUP\?lang=zh-Hans-CN url reject-dict
-^https:\/\/client-api-v2\.oray\.com\/materials\/(SLCC_IOS_STARTUP|SLCC_IOS_DEVICE|SUNLOGIN_CLIENT_IOS_PROMOTION) url reject-dict
+^https:\/\/client-api-v2\.oray\.com\/materials\/(SLCC_iOS_DEVICE_FR|SLCC_IOS_STARTUP|SLCC_IOS_DEVICE|SUNLOGIN_CLIENT_IOS_PROMOTION) url reject-dict
 # > 小红书净化
 # > 小红书 惊喜弹窗
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style|open|submit_action) url reject-dict
