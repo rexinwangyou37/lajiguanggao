@@ -9,7 +9,7 @@ HOST-SUFFIX,sdk.open.talk.igexin.com, reject
 # > 工商银行
 HOST, oisc.icbc.com.cn, REJECT
 HOST, pageviewp.icbc.com.cn, REJECT
-# 建设银行
+# > 建设银行
 HOST-KEYWORD, adv.ccb.com, REJECT
 # > 云闪付
 HOST, ads.95516.com, REJECT
@@ -18,6 +18,8 @@ HOST, sdk.open.talk.getui.net, REJECT
 HOST, sdk-conf.getui.com, REJECT
 HOST, switch.cup.com.cn, REJECT
 HOST, tysdk.95516.com, REJECT
+# > Yandex
+HOST, yandexmetrica.com, REJECT
 # > 中信银行
 HOST-SUFFIX,sis.jpush.io, reject
 HOST-SUFFIX,s.jpush.cn, reject
@@ -360,54 +362,26 @@ HOST, qwapi.apple.com, REJECT
 HOST-SUFFIX, advp.apple.com, REJECT
 HOST-SUFFIX, iad-apple.com, REJECT
 HOST-SUFFIX, iadsdk.apple.com, REJECT
-# > 优酷
-HOST-SUFFIX,atm.youku.com, reject
-HOST,ad.mobile.youku.com, reject
-HOST,iyes.youku.com, reject
-HOST,pl.cp31.ott.cibntv.net, reject
-HOST-SUFFIX,actives.youku.com, reject
-HOST-SUFFIX,ad.api.3g.tudou.com, reject
-HOST-SUFFIX,ad.api.3g.youku.com, reject
-HOST-SUFFIX,ad.api.mobile.youku.com, reject
-HOST-SUFFIX,a-dxk.play.api.3g.youku.com, reject
-HOST-SUFFIX,b.smartvideo.youku.com, reject
-HOST-SUFFIX,c.yes.youku.com, reject
-HOST-SUFFIX,das.api.youku.com, reject
-HOST-SUFFIX,das.mobile.youku.com, reject
-HOST-SUFFIX,dev-push.m.youku.com, reject
-HOST-SUFFIX,dl.g.youku.com, reject
-HOST-SUFFIX,dmapp.youku.com, reject
-HOST-SUFFIX,gamex.mobile.youku.com, reject
-HOST-SUFFIX,hudong.pl.youku.com, reject
-HOST-SUFFIX,huodong.pl.youku.com, reject
-HOST-SUFFIX,huodong.vip.youku.com, reject
-HOST-SUFFIX,hz.youku.com, reject
-HOST-SUFFIX,iyes.youku.com, reject
-HOST-SUFFIX,l.ykimg.com, reject
-HOST-SUFFIX,lstat.youku.com, reject
-HOST-SUFFIX,m.yes.youku.com, reject
-HOST-SUFFIX,mobilemsg.youku.com, reject
-HOST-SUFFIX,msg.youku.com, reject
-HOST-SUFFIX,myes.youku.com, reject
-HOST-SUFFIX,p.l.youku.com, reject
-HOST-SUFFIX,passport-log.youku.com, reject
-HOST-SUFFIX,p-log.ykimg.com, reject
-HOST-SUFFIX,push.m.youku.com, reject
-HOST-SUFFIX,r.l.youku.com, reject
-HOST-SUFFIX,s.p.youku.com, reject
-HOST-SUFFIX,sdk.api.gamex.mobile.youku.com, reject
-HOST-SUFFIX,sdk.m.youku.com, reject
-HOST-SUFFIX,stat.youku.com, reject
-HOST-SUFFIX,store.tv.api.3g.youku.com, reject
-HOST-SUFFIX,store.xl.api.3g.youku.com, reject
-HOST-SUFFIX,tdrec.youku.com, reject
-HOST-SUFFIX,test.ott.youku.com, reject
-HOST-SUFFIX,urchin.lstat.youku.com, reject
-HOST-SUFFIX,v.l.youku.com, reject
-HOST-SUFFIX,val.api.youku.com, reject
-HOST-SUFFIX,wan.youku.com, reject
-HOST-SUFFIX,ykatr.youku.com, reject
-HOST-SUFFIX,ykrec.youku.com, reject
+# > 优酷 & 菜鸟
+HOST, acs4baichuan.m.taobao.com, REJECT
+HOST, adsmind.ugdtimg.com, REJECT
+HOST, amdc.m.youku.com, REJECT
+HOST, api.sm.cn, REJECT
+HOST, apiv4-iyes.youku.com, REJECT
+HOST, baichuan-sdk.alicdn.com, REJECT
+HOST, httpdns.alicdn.com, REJECT
+HOST, huichuan-mc.sm.cn, REJECT
+HOST, huichuan.sm.cn, REJECT
+HOST, iyes.youku.com, REJECT
+HOST, m-vali.cp31.ott.cibntv.net, REJECT
+HOST, mc.atm.youku.com, REJECT
+HOST, nbsdk-baichuan.alicdn.com, REJECT
+HOST, pre-acs.youku.com, REJECT
+HOST, vali-g1.cp31.ott.cibntv.net, REJECT
+HOST, vali-ugc.cp31.ott.cibntv.net, REJECT
+HOST, yk-ssp.ad.youku.com, REJECT
+HOST, ykad-data.youku.com, REJECT
+HOST, youku-acs.m.taobao.com, REJECT
 # > 汽车之家
 host-keyword, adm3.autoimg.cn, reject
 host-keyword, audid-api.taobao.com, reject
@@ -807,11 +781,11 @@ HOST,n.3g.163.com, reject
 HOST,nex.163.com, reject
 HOST,yt-adp.nosdn.127.net, reject
 HOST,yt-adp.ws.126.net, reject
-# > 网易云
-host-keyword, ossgw.alicdn.com, reject
-HOST, gdt.qq.com, REJECT
+# > 网易云音乐
+HOST, httpdns.music.163.com, REJECT
 HOST, httpdns.n.netease.com, REJECT
 HOST, iadmat.nosdn.127.net, REJECT
+HOST, iadmatapk.nosdn.127.net, REJECT
 HOST, iadmusicmat.music.126.net, REJECT
 HOST, iadmusicmatvideo.music.126.net, REJECT
 HOST-SUFFIX, 163jiasu.com, REJECT
@@ -1056,11 +1030,7 @@ HOST,vcardsdkservice.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivo.com.cn, reject
 HOST-KEYWORD,stsdk.vivoglobal.com, reject
 # > 微博
-HOST, adstrategy.biz.weibo.com, REJECT
-HOST, kadmimage.biz.weibo.com, REJECT
-HOST, sdkaction.biz.weibo.com, REJECT
-HOST, sdkclick.biz.weibo.com, REJECT
-HOST, sdkmonitor.biz.weibo.com, REJECT
+HOST-SUFFIX, biz.weibo.com, REJECT
 HOST-KEYWORD,fastimage.uve.weibo.com, reject
 HOST-KEYWORD,adimg.uve.weibo.com, reject
 HOST-SUFFIX,adimg.vue.weibo.com, reject
@@ -1147,13 +1117,15 @@ HOST,ads.yahoo.com, reject
 HOST,ads.yahoo.de, reject
 # (Z)
 # > 知乎
-USER-AGENT,AVOS*, reject
-HOST,appcloud2.in.zhihu.com, reject
-HOST,mqtt.zhihu.com, reject
-HOST,sugar.zhihu.com, reject
-HOST,118.89.204.198, reject
-IP-CIDR,118.89.204.198/32, reject
-IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
+HOST, appcloud.zhihu.com, REJECT
+HOST, appcloud2.in.zhihu.com, REJECT
+HOST, crash2.zhihu.com, REJECT
+HOST, mqtt.zhihu.com, REJECT
+HOST, sugar.zhihu.com, REJECT
+HOST, zxid-m.mobileservice.cn, REJECT
+IP-CIDR, 103.41.167.237/32, REJECT
+IP-CIDR, 118.89.204.198/32, REJECT
+IP6-CIDR, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT
 # > 中关村
 HOST,apppv.zol.com.cn, reject
 HOST,pvnapp.zol.com.cn, reject
