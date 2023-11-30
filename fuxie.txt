@@ -1469,8 +1469,12 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 掌上英雄联盟 #开屏广告
 ^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg) url reject-200
 # > 转转 #开屏广告
-^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject-200
-^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage&uid=45577438972181 url reject-200
+^https?:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject-dict
+# > 转转 #右下角悬浮广告
+^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage&uid=45577438972181 url reject-dict
+# > 转转 #“我的”页面去除冗余的模块
+^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhuanzhuan/zhuanzhuan.js
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos url response-body infoData response-body random_body
 # > 竹马 #开屏广告
 ^http:\/\/online-api\.zhongheschool\.com\/api\/module\/show\/getLoading url reject
 # > 住这儿 #开屏广告
