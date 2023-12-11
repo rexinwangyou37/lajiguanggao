@@ -886,7 +886,6 @@ HOST-SUFFIX,hoisin.coocaa.com, reject
 HOST-SUFFIX,hoisin.coocaatv.com, reject
 HOST,data-hoisin.coocaa.com, reject
 # >  腾讯
-HOST, vv6.video.qq.com, REJECT
 HOST, tpns.qq.com, REJECT
 HOST-SUFFIX,news.ssp.qq.com, reject
 HOST-SUFFIX,news.l.qq.com, reject
