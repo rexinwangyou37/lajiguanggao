@@ -9,6 +9,8 @@ HOST-SUFFIX,sdk.open.talk.igexin.com, reject
 # > 工商银行
 HOST, oisc.icbc.com.cn, REJECT
 HOST, pageviewp.icbc.com.cn, REJECT
+# > 建设银行
+HOST-KEYWORD, adv.ccb.com, REJECT
 # > 云闪付
 HOST, ads.95516.com, REJECT
 HOST, cm-10-138.getui.com, REJECT
