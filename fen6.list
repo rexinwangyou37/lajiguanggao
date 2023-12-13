@@ -222,7 +222,6 @@ host-keyword, val.atm.youku.com, reject
 host-keyword, yktd.m.cn.miaozhen.com, reject
 host-keyword, server.m.pp.cn, reject
 host-keyword, puds.ucweb.com, reject
-host-keyword, wgo.mmstat.com, reject
 host-keyword, log.cs.pp.cn, reject
 host-keyword, applog.uc.cn, reject
 host-keyword, afpapi.alimama.com, reject
@@ -276,7 +275,6 @@ HOST-SUFFIX,val.atm.youku.com, reject
 HOST-SUFFIX,yktd.m.cn.miaozhen.com, reject
 HOST-SUFFIX,server.m.pp.cn, reject
 HOST-SUFFIX,puds.ucweb.com, reject
-HOST-SUFFIX,wgo.mmstat.com, reject
 HOST-SUFFIX,log.cs.pp.cn, reject
 HOST-SUFFIX,applog.uc.cn, reject
 HOST-SUFFIX,afpapi.alimama.com, reject
@@ -9421,7 +9419,6 @@ HOST-SUFFIX,app-measurement.com, reject
 HOST-SUFFIX,mob.com, reject
 HOST-SUFFIX,api.joybj.com, reject
 HOST-SUFFIX,api.whizzone.com, reject
-HOST-SUFFIX,mmstat.com, reject
 HOST-SUFFIX,4paradigm.com, reject
 HOST-SUFFIX,catch.gift, reject
 HOST-SUFFIX,pubnative.net, reject
