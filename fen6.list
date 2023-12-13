@@ -384,7 +384,6 @@ HOST, ykad-data.youku.com, REJECT
 HOST, youku-acs.m.taobao.com, REJECT
 # > 汽车之家
 host-keyword, adm3.autoimg.cn, reject
-host-keyword, audid-api.taobao.com, reject
 host-keyword, collectionpv.che168.com, reject
 host-keyword, adproxy.autohome.com, reject
 host-keyword, applogapi.autohome.com, reject
