@@ -1263,7 +1263,7 @@ HOST, bravetense.com, REJECT
 HOST, furiousfar.com, REJECT
 HOST, swallowcrockerybless.com, REJECT
 # > 阿里
-HOST, ossgw.alicdn.com, REJECT
+# HOST, ossgw.alicdn.com, REJECT
 HOST, ems.youku.com, REJECT
 HOST, hudong.alicdn.com, REJECT
 HOST-SUFFIX, ut.taobao.com, REJECT
