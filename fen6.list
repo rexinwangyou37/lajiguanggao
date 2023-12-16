@@ -142,7 +142,6 @@ IP-CIDR, 123.151.54.50/32, REJECT
 IP6-CIDR, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, REJECT
 IP6-CIDR, 240e:928:1400:10::25/128, REJECT
 # > 搜狗
-#host, indivi-cdn.shouji.sogou.com, reject
 HOST-SUFFIX,epro.sogou.com, reject
 HOST-SUFFIX,golden1.sogou.com, reject
 HOST-SUFFIX,inte.sogou.com, reject
@@ -163,6 +162,7 @@ HOST-SUFFIX,brand.sogou.com, reject
 HOST-SUFFIX,bsiet.husky.sogou.com, reject
 # > 搜狗输入法
 host-keyword, business-cdn.shouji.sogou.com, reject
+host, indivi-cdn.shouji.sogou.com, reject
 # > 屏蔽京东和搜狗收集信息
 host-suffix, jdqd.jd.com, reject
 host-suffix, shouji.sougou.com, reject
