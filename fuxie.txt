@@ -597,10 +597,10 @@ https://api.gotokeep.com/nuocha/course/v2/\w+/preview url script-response-body h
 
 # >>>>>>>>>>>>>>> ✅ L开头 ✅ <<<<<<<<<<<<<<
 # > 拉卡拉 #开屏广告
-^https:\/\/lamb\.lakala\.com\/lamo\/adv\/access\/queryMaterialUrl url reject-dict
-^https:\/\/wallet\.lakala\.com\/m\/lama\/mgt\/activity\/bank\/query\/list url reject-dict
-^https:\/\/wallet\.lakala\.com\/m\/a\/lama\/mgt\/activity\/biz\/query\/byMerInfo url reject-dict
-^https:\/\/wallet\.lakala\.com\/m\/a\/message\/v3\/fetchMsgList url reject-dict
+#^https:\/\/lamb\.lakala\.com\/lamo\/adv\/access\/queryMaterialUrl url reject-dict
+#^https:\/\/wallet\.lakala\.com\/m\/lama\/mgt\/activity\/bank\/query\/list url reject-dict
+#^https:\/\/wallet\.lakala\.com\/m\/a\/lama\/mgt\/activity\/biz\/query\/byMerInfo url reject-dict
+#^https:\/\/wallet\.lakala\.com\/m\/a\/message\/v3\/fetchMsgList url reject-dict
 # > 懒人听书 #开屏广告
 ^https?:\/\/118\.178\.214\.118\/yyting\/advertclient\/ClientAdvertList\.action url reject-img
 ^https?:\/\/dapis\.mting\.info\/yyting\/advertclient\/ClientAdvertList\.action url reject-img
