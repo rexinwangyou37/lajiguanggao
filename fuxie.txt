@@ -1260,6 +1260,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 # > [0-9]+\.(jpg|png)只拦截纯数字的jpg和png格式图片
 # > 邮储信用卡 #开屏广告
 ^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/[0-9]+\.(jpg|png|jpeg) url reject-200
+^https?:\/\/d\.psbc\.com:9091\/mcc\/resources\/.+\.(jpg|jpeg) url reject-dict
 # > 盈宝证券 #开屏广告
 ^https:\/\/api\.winbull8\.com\/v1\/marketing\/(advert|activity)\/(list|page) url reject-200
 # > 盈立智投 #开屏广告
