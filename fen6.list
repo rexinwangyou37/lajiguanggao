@@ -586,6 +586,9 @@ HOST,advertise.baicizhan.org, reject
 # > 易车
 HOST,adx.yiche.com, reject
 HOST,log.ycapp.yiche.com, reject
+# > 亲邻开门 #我的广告 #商城广告
+HOST,mall-dsp2.qinlinkeji.com, reject
+HOST,mallapi2.qinlinkeji.com, reject
 # > 团油
 host-keyword, img1.czb365.com, reject
 # > Braze
