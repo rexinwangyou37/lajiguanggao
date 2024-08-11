@@ -161,6 +161,7 @@ HOST-SUFFIX,bsiet.husky.sogou.com, reject
 # > 搜狗输入法
 host-keyword, business-cdn.shouji.sogou.com, reject
 host, indivi-cdn.shouji.sogou.com, reject
+host, sg.bls.mdt.qq.com, reject
 # > 屏蔽京东和搜狗收集信息
 host-suffix, jdqd.jd.com, reject
 host-suffix, shouji.sougou.com, reject
