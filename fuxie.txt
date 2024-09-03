@@ -80,7 +80,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > 首页 - 悬浮部件
 ^https:\/\/aiqicha\.baidu\.com\/app\/getPopConfigAjax url reject-dict
 # > 首页 - 热门话题
-^https:\/\/aiqicha\.baidu\.com\/app\/getHotTopicAjax url reject-dic
+^https:\/\/aiqicha\.baidu\.com\/app\/getHotTopicAjax url reject-dict
 # > 首页 - 每日早报
 ^https:\/\/aiqicha\.baidu\.com\/app\/getNewsReportAjax url reject-dict
 # > 首页 - 专家讲堂
