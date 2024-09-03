@@ -73,7 +73,6 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 # > AcFun弹幕视频网
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ url reject
 # > 爱企查去广告
-^http:\/\/180\.76\.76\.112\/v\d\/ reject
 # > 首页 - 轮播图
 ^https:\/\/aiqicha\.baidu\.com\/app\/bannerPicAjax reject-dict
 # > 首页 - 悬浮部件
