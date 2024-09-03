@@ -72,8 +72,29 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https:\/\/api\.shanghaionstar\.com\/sos\/contentinfo\/v1\/public\/landingpage url reject-dict
 # > AcFun弹幕视频网
 ^https?:\/\/api-new\.app\.acfun\.cn\/rest\/app\/flash\/screen\/ url reject
-# > 爱企查 #开屏广告
-^https?:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum url reject-200
+# > 爱企查去广告
+^http:\/\/180\.76\.76\.112\/v\d\/, REJECT
+# > 首页 - 轮播图
+^https:\/\/aiqicha\.baidu\.com\/app\/bannerPicAjax reject-dict
+# > 首页 - 悬浮部件
+^https:\/\/aiqicha\.baidu\.com\/app\/getPopConfigAjax reject-dict
+# > 首页 - 热门话题
+^https:\/\/aiqicha\.baidu\.com\/app\/getHotTopicAjax reject-dic
+# > 首页 - 每日早报
+^https:\/\/aiqicha\.baidu\.com\/app\/getNewsReportAjax reject-dict
+# > 首页 - 专家讲堂
+^https:\/\/aiqicha\.baidu\.com\/app\/getExpertVideoAjax reject-dict
+# > 首页 - 热门快讯
+^https:\/\/aiqicha\.baidu\.com\/apps\/getHotRecommendV2Ajax reject-dict
+# > 首页 - 底部登录横幅
+^https:\/\/aiqicha\.baidu\.com\/m\/getLoginWordsAjax reject-dict
+# > 首页 - 弹窗
+^https:\/\/aiqicha\.baidu\.com\/app\/getAppPopSettingAjax reject-dict
+^https:\/\/aiqicha\.baidu\.com\/app\/commonstatusAjax reject
+# > 首页 - 精选监控
+^https:\/\/aiqicha\.baidu\.com\/apps\/getHomeMonitorDataAjax reject-dict
+# > 首页 - 搜索栏大家都在搜
+^https:\/\/aiqicha\.baidu\.com\/apps\/searchRecommendAjax reject-dict
 # > 爱阅书香 #开屏广告
 ^https?:\/\/icc\.one\/iFreeTime\/xid32uxaoecnfv2\/ url reject
 
@@ -136,16 +157,12 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/mime\.baidu\.com\/sapi\/v1\/circle\/joinedlist url echo-response application/json echo-response https://github.com/Keywos/rule/raw/main/mocks/mime.json
 ^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list url echo-response application/json echo-response https://github.com/Keywos/rule/raw/main/mocks/mime.json
 ^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input url echo-response application/json echo-response https://github.com/Keywos/rule/raw/main/mocks/bd.json
-# > 百度网盘 #开屏广告
-^https?:\/\/pan\.baidu\.com\/api\/getsyscfg url script-response-body https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
 # > 百度网盘_设置信息流
 ^https?:\/\/pan\.baidu\.com\/act\/v\d\/(bchannel|welfare)\/list url reject
 # > 百度网盘_通用广告
 ^https?:\/\/pan\.baidu\.com\/rest\/.*\/pcs\/ad url reject
 # > 百度网盘_活动推广
 ^https?:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject
-# > 百度网盘_会员权益
-^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?app_id url script-response-body https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.vip.js
 # > 百度贴吧（副作用:新回复等通知功能不可用,需手动进入消息tab页点击查看）
 ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
 ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
@@ -1492,8 +1509,11 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 掌上英雄联盟 #开屏广告
 ^https?:\/\/ossweb-img\.qq\.com\/upload\/adw\/image\/[0-9]{3}\/202[0-9]{5}\/[a-z0-9]{32}\.(jpg|jpeg) url reject-200
 # > 转转 #开屏广告
-^https:\/\/app\.zhuanzhuan\.com\/zzx\/transfer\/getConfigInfo url reject-dict
-^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/getOpenScreen url reject-dict
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/getOpenScreen reject
+# > 转转 我的页面 - 发布闲置赚钱
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzusercenter\/myprofilevariouscards reject-dict
+# > 转转 我的页面 - 精选好货
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos reject-dict
 # > 转转 #右下角悬浮广告
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/userred\?scene=homePage&uid=45577438972181 url reject-dict
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzusercenter\/myprofilevariouscards url reject-dict
