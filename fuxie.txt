@@ -381,7 +381,7 @@ hostname = ad.ysepay.com, m.jd.com, 118.89.204.198,103.41.167.237,2402:4e00:1200
 ^https?:\/\/mbank\.grcbank\.com\/ydyh\/resources\/startpage\/.*.(jpg|png) url reject-200
 # > 高德地图 #净化
 # > 高德地图 其他
-^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
+^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url script-response-header https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/header.js
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? url reject-dict
 # > 高德地图 导航详情页,路线规划,地点详情页,搜索详情页,导航结束页
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan)\? url reject-dict
@@ -895,7 +895,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 ^https:\/\/api\.gameplus\.qq\.com\/community\.OnloadSrv\/GetPreloadScreenInfo url reject-200
 # > 搜狗输入法 #开屏广告
 ^https:\/\/us\.l\.qq\.com\/exapp url reject-200
-^https:\/\/sec\.sginput\.qq\.com\/q url script-response-header https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
+^https:\/\/sec\.sginput\.qq\.com\/q url script-response-header https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/header.js
 # > 搜狗输入法 #屏蔽游戏中心
 ^https:\/\/h5api\.sginput\.qq\.com\/v1\/gcenter\/ios\/homepage url reject-dict
 # > 山东移动
