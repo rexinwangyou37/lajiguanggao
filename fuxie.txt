@@ -747,7 +747,7 @@ http://dc.bz.mgtv.com/dynamic/v1/channel/index/.+ url script-response-body https
 # > 农业银行 #开屏广告
 ^https:\/\/midc\.cdn-static\.abchina\.com\.cn\/distributecenterimg\/file\/download\/(bdfb4|86fb9|7aa68) url reject-dict
 ^https?:\/\/enjoy\.cdn-static\.abchina\.com\/yx-engine-web\/file\/download\/(9ce31|1bf6e|6bd18) url reject-dict
-#^https?:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm url reject-200
+^https:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm$ url script-response-header https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/header.js
 # > 南方航空弹窗
 ^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement url reject-200
 # > 南方航空更新弹窗
