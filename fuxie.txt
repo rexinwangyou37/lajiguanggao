@@ -1151,17 +1151,17 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style|open|submit_action) url reject-dict
 ^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? url reject-dict
 # > 小红书 详情页 小部件
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/note\/widgets url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/note\/widgets url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
 # > 小红书 搜索页
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/(banner|hot)_lis url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/(hint|trending)\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/(banner|hot)_lis url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/(hint|trending)\? url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\? url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
 # > 小红书 开屏广告
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/system_service\/config\? url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config$ url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
 # > 小红书 信息流
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v3\/note\/guide\? url reject-dict
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/(followfeed|homefeed|note\/(feed|videofeed))\? url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/(followfeed|homefeed|note\/(feed|videofeed))\? url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/xiaohongshu.js
 ^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? url reject-dict
 # > 小利生活 #开屏广告
 ^https?:\/\/mpos-pic\.helipay\.com\/upload\/images\/advertisment\/image\/20211029 url reject-200
@@ -1225,7 +1225,7 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?+:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen url reject-200
 ^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/(homepage_ad\?|sleep_ad\?|sport_summary_ad\?|sport_training_ad\?|step_detail_ad\?|training_video_ad\?) url reject-img
 # > 小米商城 #开屏广告
-^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
+^https?:\/\/api\.m\.mi\.com\/v1\/app\/start url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/weibo.js
 # > 小米有品 #开屏广告
 ^https:\/\/shopapi\.io\.mi\.com\/mtop\/mf\/resource\/homePage\/pageConfig url reject-200
 # > 小米运动 #开屏广告
@@ -1311,9 +1311,9 @@ http:\/\/analytics\.163\.com\/ntes url reject
 ^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject-200
 ^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject-200
 # > 请求体
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|get_watch|next|player|reel\/reel_watch_sequence) url script-request-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube/request.js
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|get_watch|next|player|reel\/reel_watch_sequence) url script-request-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/request.js
 # > 响应体
-^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(account\/get_setting|browse|get_watch|guide|next|player|reel\/reel_watch_sequence|search) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/youtube/response.js
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(account\/get_setting|browse|get_watch|guide|next|player|reel\/reel_watch_sequence|search) url script-response-body https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/refs/heads/main/JS/response.js
 # > 有道词典 #开屏广告
 ^https?:\/\/oimage([a-z])([0-9])\.ydstatic\.com\/.+adpublish url reject
 ^https?:\/\/oimage\w\d\.ydstatic\.com\/image\?.+?=adpublish url reject-img
