@@ -1516,9 +1516,9 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 # > 转转 我的页面 - 精选好货
 ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos url reject-dict
 # > 转转 移除悬浮窗
-^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/KeLee/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js
 # > 转转 精简我的页面
-^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3 url script-response-body https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js
+^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3 url script-response-body https://raw.githubusercontent.com/axtyet/Luminous/main/KeLee/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js
 # > 竹马 #开屏广告
 ^http:\/\/online-api\.zhongheschool\.com\/api\/module\/show\/getLoading url reject
 # > 住这儿 #开屏广告
