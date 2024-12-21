@@ -846,7 +846,7 @@ https://api.rr.tv/storage/business/rootName/app/homePage\?dataType=JSON url reje
 # > 瑞幸咖啡
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew url reject-dict
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList url reject-dict
-#^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList url reject-dict
+^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList url reject-dict
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules url reject-dict
 ^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea url reject-dict
 ^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck url reject-dict
