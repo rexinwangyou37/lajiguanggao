@@ -16,6 +16,7 @@ HOST, sdk.open.talk.getui.net, REJECT
 HOST, sdk-conf.getui.com, REJECT
 HOST, switch.cup.com.cn, REJECT
 HOST, tysdk.95516.com, REJECT
+host, ads.cup.com.cn, reject
 # > Yandex
 HOST, yandexmetrica.com, REJECT
 # > 中信银行
