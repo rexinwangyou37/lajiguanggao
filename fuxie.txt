@@ -505,7 +505,7 @@ https://fbchina.flipchina.cn/v2/ad/query/* url reject
 # > 建行生活 #我的页面悬浮广告 
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? url response-body "TAG_AD_INFO" response-body "TAG_AD_INFO0"
 # > 建行生活 #删除首页+金融+我的多个横幅等乱七八糟的广告
-^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05 url echo-response application/json echo-response https://raw.githubusercontent.com/rexinwangyou37/lajiguanggao/main/JS/jhshA3341AB05.json
+^https?:\/\/yunbusiness\.ccb\.com\/(basic_service|clp_service)\/txCtrl\?txcode=A3341AB0(3|5|8) url echo-response application/json echo-response https://raw.githubusercontent.com/rexinwangyou37/loon/refs/heads/main/script/jhsh.js
 # > 吉林银行 #开屏广告
 ^https:\/\/cdn\.jlbank\.com\.cn\/jlstaticresource\/APPSTART url reject-200
 # > 江苏苏宁银行 #开屏广告
@@ -1531,4 +1531,5 @@ https://new-app-api.ylyk.com/v1/user/myinfo/adviser url reject
 
 
 # > 其他广告
+
 
