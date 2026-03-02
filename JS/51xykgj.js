@@ -1,46 +1,47 @@
-// ===== debug start =====
-const url = $request.url;
-let body = $response.body;
+// 51信用卡管家 - 首页/我的页净化（Loon HTTP-RESPONSE）
 
-console.log("[51xykgj] hit:", url);
-console.log("[51xykgj] body type:", typeof body, "len:", body ? body.length : 0);
+(function () {
+  const _url = ($request && $request.url) ? $request.url : "";
+  const _body = ($response && $response.body) ? $response.body : "";
 
-if (!body) {
-  console.log("[51xykgj] no body received");
-  $done({});
-  return;
-}
-
-let obj;
-try {
-  obj = JSON.parse(body);
-  console.log("[51xykgj] json ok, keys:", Object.keys(obj).slice(0, 20).join(","));
-} catch (e) {
-  console.log("[51xykgj] json parse failed:", String(e));
-  console.log("[51xykgj] body head:", body.slice(0, 120));
-  $done({});
-  return;
-}
-// ===== debug end =====
-
-// 下面保持你原脚本的处理逻辑...
-
-if (!$response.body) {
-  $done({});
-}
-const url = $request.url;
-let obj = JSON.parse($response.body);
-
-if (obj?.operationResourceDTO) {
-  obj.operationResourceDTO = [];
-}
-
-if (url.includes("api.u51.com/generic-config-gateway/api")) {
-  if (obj?.meTabConfigExts) {
-    let reserve = ['设置']
-    obj.meTabConfigExts = obj.meTabConfigExts.filter(item => reserve.includes(item.meTabConfigs[0].title));
+  // 没有 body 直接退出（一定要 return）
+  if (!_body) {
+    $done({});
+    return;
   }
-}
 
-body = JSON.stringify(obj);
-$done({body});
+  let obj;
+  try {
+    obj = JSON.parse(_body);
+  } catch (e) {
+    // 不是 JSON 就不处理
+    $done({});
+    return;
+  }
+
+  // ===== 1) 首页：operationResourceDTO 清空（你原逻辑保留）=====
+  if (obj && obj.operationResourceDTO) {
+    obj.operationResourceDTO = [];
+  }
+
+  // ===== 2) 我的页：只保留“设置”（修正 URL 判断 + 防崩溃）=====
+  // 你命中的 URL 是：
+  // https://api.u51.com/generic-config-gateway/api/v3/guanjia/me-tab2/config?...
+  if (_url.includes("/generic-config-gateway/api/") && _url.includes("/guanjia/") && _url.includes("/me-tab")) {
+    if (Array.isArray(obj.meTabConfigExts)) {
+      const reserveTitles = new Set(["设置"]);
+      obj.meTabConfigExts = obj.meTabConfigExts.filter(item => {
+        try {
+          const title = item?.meTabConfigs?.[0]?.title;
+          return reserveTitles.has(title);
+        } catch (e) {
+          return false;
+        }
+      });
+    }
+  }
+
+  // 输出
+  const out = JSON.stringify(obj);
+  $done({ body: out });
+})();
